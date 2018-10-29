@@ -1,19 +1,23 @@
 public class Terning {
 
-    public static void main(String[] args){
-        int sider = 6;
+    private int sider = 1;
 
-        int vaerdi;
 
-        vaerdi = (int)(Math.random()*sider)+1;
+    public void setSider(){
 
-        System.out.println(vaerdi);
+        sider = (int)(Math.random()*6)+1;
 
     }
 
+    public int getSider(){
 
+        return sider;
 
+    }
 
-
+    public int rul(){
+        sider = (int)(Math.random()*6)+1;
+        return sider;
+    }
 
 }
