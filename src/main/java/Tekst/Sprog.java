@@ -1,4 +1,4 @@
 package Tekst;
 
-public class Sprog {
+public class Sprog{
 }
