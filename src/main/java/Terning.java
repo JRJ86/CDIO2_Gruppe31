@@ -1,21 +1,20 @@
-public class Terning {
+public class Terning
+{
 
     private int sider = 1;
 
-
-    public void setSider(){
-
+    public void setSider()
+    {
         sider = (int)(Math.random()*6)+1;
-
     }
 
-    public int getSider(){
-
+    public int getSider()
+    {
         return sider;
-
     }
 
-    public int rul(){
+    public int rul()
+    {
         sider = (int)(Math.random()*6)+1;
         return sider;
     }
