@@ -1,3 +1,0 @@
-sprog: "English"
-guldMineTitel: "Goldmine"
-guldMineBeskrivelse: "You found gold in the mountains and sell it for 650, you're rich!"

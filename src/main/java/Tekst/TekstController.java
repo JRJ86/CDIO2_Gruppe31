@@ -10,23 +10,40 @@ public class TekstController {
 
     private static String[] getSprog(){
         File[] sprogFiler = getSprogFiler();
-        String[] sprog = new String[sprogFiler.length];
-        for( int i = 0; i<sprogFiler.length; i++){
-            sprog[i] = findPrintbarTekst(getLinjeFraFil(sprogFiler[i],0));
+        if(sprogFiler != null) {
+            String[] sprog = new String[sprogFiler.length];
+            for (int i = 0; i < sprogFiler.length; i++) {
+                sprog[i] = findPrintbarTekst(getLinjeFraFil(sprogFiler[i], 0));
+            }
+            return sprog;
+        }else{
+            return null;
         }
-        return sprog;
     }
 
     private static File[] getSprogFiler(){
         File f = new File(FOLDERSTI);
         File[] allFiles = f.listFiles();
-        return allFiles;
+        if( allFiles.length == 0){
+            System.out.println("FEJL: Ingen sprogfiler i '"+FOLDERSTI+"'");
+            return null;
+        }else {
+            return allFiles;
+        }
     }
 
     private static void setSprog(int index){
         File[] sprogFiler = getSprogFiler();
-        nuvaerendeTekstFil = sprogFiler[index];
+        if(sprogFiler != null ){
+            if(index>0 && index<sprogFiler.length){
+                nuvaerendeTekstFil = sprogFiler[index];
+            }else{
+                System.out.println("FEJL: Forsøgte at sætte ikke-eksisterende sprog!");
+            }
+        }
     }
+
+
 
     private static File getTekstFil(){
         if(nuvaerendeTekstFil == null){
@@ -37,7 +54,8 @@ public class TekstController {
 
 
     /**
-     *  Finder selve teksten på linjen, der skal printes - dvs. teksten mellem stjernerne.
+     *  Finder den printbare tekst på en vilkårlig linje - dvs.
+     *  teksten mellem stjernerne, og altså den tekst der vises i UI.
      * @param linje linje tekst hvori man ønsker at finde den printbare tekst
      * @return Teksten der skal printes i spillet
      */
@@ -59,7 +77,7 @@ public class TekstController {
 
                 // Checker om char er første citationstegn
                 if(linje.charAt(i)=='*'){
-                    startIndex = i;
+                    startIndex = i+1;
                     break;
                 }}
 
@@ -72,9 +90,7 @@ public class TekstController {
                         break; }} }
         }
         if(startIndex != 0 && slutIndex != 0){ printBarTekst = linje.substring(startIndex,slutIndex); }
-
         return printBarTekst;
-
     }
 
 
@@ -113,28 +129,30 @@ public class TekstController {
         Scanner scanner = new Scanner(System.in);
         String[] sprog = getSprog();
 
-        for(int i=0; i<sprog.length; i++){
-            System.out.println(""+i+") "+sprog[i]);
-        }
-
-
-        do {
-            int input = scanner.nextInt();
-
-            if(input>=0 && input<sprog.length){
-                setSprog(input);
-                break;
-            }else if (input==999){
-                break;
-            }else{
-                System.out.println("Forkert input");
+        if (sprog != null) {
+            for (int i = 0; i < sprog.length; i++) {
+                System.out.println("" + i + ") " + sprog[i]);
             }
 
-        }while(true);
 
-        System.out.println(Tekst.guldMineTitel());
-        System.out.println(Tekst.guldMineBeskrivelse());
+            do {
+                int input = scanner.nextInt();
 
-        scanner.close();
+                if (input >= 0 && input < sprog.length) {
+                    setSprog(input);
+                    break;
+                } else if (input == 999) {
+                    break;
+                } else {
+                    System.out.println("Forkert input");
+                }
+
+            } while (true);
+
+            System.out.println(Tekst.guldMineTitel());
+            System.out.println(Tekst.guldMineBeskrivelse());
+
+            scanner.close();
+        }
     }
 }

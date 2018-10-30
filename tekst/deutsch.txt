@@ -1,3 +1,0 @@
-sprog: "Deutsch"
-guldMineTitel: "NEIN NEIN NEIN NEIN"
-guldMineBeskrivelse: "Vous l'avez trouvé dans les montagnes et l'avez vendu à 650, vous êtes riche!"
