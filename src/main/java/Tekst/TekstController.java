@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class TekstController {
     private static String FOLDERSTI = "tekst"+File.separator;
-    private static File nuvaerendeTekstFil = null;
+    private static File nuvaerendeSprogFil = null;
 
 
     /**
@@ -56,7 +56,7 @@ public class TekstController {
         File[] sprogFiler = getSprogFiler();
         if(sprogFiler != null ){
             if(index>0 && index<sprogFiler.length){
-                nuvaerendeTekstFil = sprogFiler[index];
+                nuvaerendeSprogFil = sprogFiler[index];
             }else{
                 System.out.println("FEJL: Forsøgte at sætte ikke-eksisterende sprog!");
             }
@@ -64,12 +64,16 @@ public class TekstController {
     }
 
 
-
-    private static File getTekstFil(){
-        if(nuvaerendeTekstFil == null){
-            nuvaerendeTekstFil = new File(FOLDERSTI+"dansk.txt");
+    /**
+     * Henter den nuvaerendeSprogFil. Hvis ikke den er sat (nuvaerendeSprogFil==null)
+     * så sætter den filen til at være den standard sprogfil (dansk.txt)
+     * @return nuvaerendeSprogFil variabel
+     */
+    private static File getNuvaerendeSprogFil(){
+        if(nuvaerendeSprogFil == null){
+            nuvaerendeSprogFil = new File(FOLDERSTI+"dansk.txt");
         }
-        return nuvaerendeTekstFil;
+        return nuvaerendeSprogFil;
     }
 
 
@@ -131,7 +135,7 @@ public class TekstController {
     }
 
     static String getTekst(int linjeNummer){
-        String tekst = getLinjeFraFil(getTekstFil(), linjeNummer);
+        String tekst = getLinjeFraFil(getNuvaerendeSprogFil(), linjeNummer);
         return findPrintbarTekst(tekst);
     }
 
