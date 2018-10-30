@@ -28,13 +28,6 @@ public class Raflebaeger {
         terningSum = terning1.getSider()+terning2.getSider();
     }
 
-    public static void main(String[] args){
-
-        Raflebaeger raflebaeger = new Raflebaeger();
-
-        raflebaeger.rulRaflebaeger();
-        System.out.println(raflebaeger.getRaflebaeger());
-    }
 
 
 }
