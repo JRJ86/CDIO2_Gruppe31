@@ -18,6 +18,8 @@ public class TekstController {
         Den henviser til en specifik sprogfil. */
     private static File nuvaerendeSprogFil = null;
 
+
+
     /**
      * @author Malte
      * Henter alle navnene på mulige sprog, med udgangspunkt
@@ -29,7 +31,7 @@ public class TekstController {
      * ordnet efter sprogets nr (dvs. det samme nummer man skal
      * bruge hvis man ønsker at sætte nuværendesprog til det pågælende sprog).
      */
-    private static String[] getSprog(){
+    private static String[] getAlleSprog(){
         File[] sprogFiler = getSprogFiler();
         if(sprogFiler != null) {
             String[] sprog = new String[sprogFiler.length];
@@ -98,7 +100,7 @@ public class TekstController {
      * @param linje linje tekst hvori man ønsker at finde den printbare tekst
      * @return Teksten der skal printes i spillet
      */
-    static String findPrintbarTekst(String linje){
+    private static String findPrintbarTekst(String linje){
         String printBarTekst = "";
 
         int startIndex = 0;
@@ -172,13 +174,14 @@ public class TekstController {
      */
     static String getTekst(int linjeNummer){
         String tekst = getLinjeFraFil(getNuvaerendeSprogFil(), linjeNummer);
-        return findPrintbarTekst(tekst);
+        if(tekst != null){return findPrintbarTekst(tekst); }
+        else{return null;}
     }
 
 
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-        String[] sprog = getSprog();
+        String[] sprog = getAlleSprog();
 
         File fil = getNuvaerendeSprogFil();
         System.out.println(getLinjeFraFil(fil, 10));
