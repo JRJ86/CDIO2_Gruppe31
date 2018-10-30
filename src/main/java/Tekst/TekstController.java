@@ -102,8 +102,7 @@ public class TekstController {
                 // Checker om char er første citationstegn
                 if(linje.charAt(i)=='*'){
                     startIndex = i+1;
-                    break;
-                }}
+                    break; }}
 
             if( startIndex != 0){
 
@@ -137,14 +136,6 @@ public class TekstController {
     static String getTekst(int linjeNummer){
         String tekst = getLinjeFraFil(getNuvaerendeSprogFil(), linjeNummer);
         return findPrintbarTekst(tekst);
-    }
-
-    private static void getFile()throws IOException {
-        File f = new File("tekst"+File.separator+"dansk.txt");
-
-        String msg = (f.createNewFile()) ? "Created new file" : "Didn't create new file";
-
-        String dir = System.getProperty("user.dir");
     }
 
 
