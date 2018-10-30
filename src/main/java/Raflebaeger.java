@@ -25,8 +25,10 @@ public class Raflebaeger {
 
     public void setRaflebaeger()
     {
-        terningSum = terning1.getSider()+terning2.getSider();
+        terningSum = terning1.rul()+terning2.rul();
     }
+
+
 
 
 
