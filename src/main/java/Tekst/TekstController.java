@@ -34,7 +34,10 @@ public class TekstController {
         if(sprogFiler != null) {
             String[] sprog = new String[sprogFiler.length];
             for (int i = 0; i < sprogFiler.length; i++) {
-                sprog[i] = findPrintbarTekst(getLinjeFraFil(sprogFiler[i], 0));
+                String tekstPaaLinje = getLinjeFraFil(sprogFiler[i], 0);
+                if(tekstPaaLinje != null) {
+                    sprog[i] = findPrintbarTekst(tekstPaaLinje);
+                }else{return null;}
             }
             return sprog;
         }else{
