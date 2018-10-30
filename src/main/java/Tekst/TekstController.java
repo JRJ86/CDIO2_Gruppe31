@@ -117,21 +117,36 @@ public class TekstController {
     }
 
 
-    static String getLinjeFraFil(File tekstFil, int linjeNummer){
+    /**
+     * Henter en bestemt linje fra en fil, med udgangspunkt i linjens nummer.
+     * Denne metode kan bruges i andre sammenhængen, og har ikke specifikt
+     * noget at gøre med denne klasse.
+     * @param tekstFil tekstfilen man ønsker at finde linjen i
+     * @param linjeNummer nummeret på den linje man ønsker at finde
+     * @return teksten på den linjer man ønsker som en String. Den returnerer 'null' hvis
+     * linjen ikke eksisterer, eller hvis der ikke står noget på linjen.
+     */
+    private static String getLinjeFraFil(File tekstFil, int linjeNummer){
         String tekst = "";
+        /* En try-catch statement, der sikrer at programmet ikke crasher
+            hvis der opstår fejl under indlæsningen af filen. */
         try {
             BufferedReader reader = new BufferedReader(new FileReader(tekstFil));
+            /* Et for loop der læser hver linje, og stopper, når man
+                kommer til den linje man ønsker at få returneret */
             for(int i=0; i<=linjeNummer; i++){
                 tekst = reader.readLine();
             }
+            return tekst;
 
         }catch(FileNotFoundException e){
             System.out.println("No File");
         }catch(IOException e){
             System.out.println("IOException");
         }
-        return tekst;
+        return null;
     }
+
 
     static String getTekst(int linjeNummer){
         String tekst = getLinjeFraFil(getNuvaerendeSprogFil(), linjeNummer);
@@ -142,6 +157,9 @@ public class TekstController {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         String[] sprog = getSprog();
+
+        File fil = getNuvaerendeSprogFil();
+        System.out.println(getLinjeFraFil(fil, 10));
 
         if (sprog != null) {
             for (int i = 0; i < sprog.length; i++) {
