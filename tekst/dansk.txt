@@ -1,0 +1,3 @@
+sprog: *Dansk*
+guldMineTitel: *Guldmine*
+guldMineBeskrivelse: *Du har fundet guld i bjergene og har fundet saelger det for 650, du er rig!*
