@@ -8,6 +8,16 @@ public class TekstController {
     private static File nuvaerendeTekstFil = null;
 
 
+    /**
+     * Henter alle navne på mulige sprog, med udgangspunkt
+     * i hvilke sprog-filer der ligger \tekst\ mappen.
+     * Den henter alle de første linjer (navnet på sproget)
+     * i alle sprogfiler.
+     *
+     * @return En liste over navnene på alle sprog. Listen er
+     * ordnet efter sprogets nr (dvs. det samme nummer man skal
+     * bruge hvis man ønsker at sætte nuværendesprog til det pågælende sprog).
+     */
     private static String[] getSprog(){
         File[] sprogFiler = getSprogFiler();
         if(sprogFiler != null) {
@@ -21,6 +31,10 @@ public class TekstController {
         }
     }
 
+    /**
+     * Henter alle sprog-filerne i mappen \tekst\ - giver fejl, hvis der ingen filer er.
+     * @return Sprog filerne som en File array
+     */
     private static File[] getSprogFiler(){
         File f = new File(FOLDERSTI);
         File[] allFiles = f.listFiles();
@@ -32,6 +46,12 @@ public class TekstController {
         }
     }
 
+    /**
+     *  Indstiller sproget, alle tekststykker printes på vha. af et id.
+     *  Den sætter blot filen som programmet skal hente tekststykker fra
+     *  til filen, med det pågældende index.
+     * @param index sprogets listeindex, hvis man henter sprog via getSprog()
+     */
     private static void setSprog(int index){
         File[] sprogFiler = getSprogFiler();
         if(sprogFiler != null ){
@@ -112,7 +132,6 @@ public class TekstController {
 
     static String getTekst(int linjeNummer){
         String tekst = getLinjeFraFil(getTekstFil(), linjeNummer);
-
         return findPrintbarTekst(tekst);
     }
 
