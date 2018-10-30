@@ -1,10 +1,10 @@
+
+import java.util.Random;
 /**
- * @Author Jacob
+ * @author Jacob
  * Terning klassen, som har en Terning konstruktør
  * og metoder der ruller en terning og returner værdien.
  */
-
-import java.util.Random;
 public class Terning
 {
     //Variable der beskriver hvilken side der er op (sider) og max side side antal (MAX)
@@ -34,6 +34,10 @@ public class Terning
     {
         sider = (int)(Math.random()*MAX)+1;
         return sider;
+    }
+
+    public void skiftTerning(){
+
     }
 
 }
