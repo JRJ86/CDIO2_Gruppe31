@@ -1,3 +1,4 @@
+import java.util.Random;
 public class Raflebaeger {
 
     private int terningSum;
@@ -7,32 +8,32 @@ public class Raflebaeger {
 
     public Raflebaeger()
     {
-        Terning terning1 = new Terning();
-        Terning terning2 = new Terning();
+        terning1 = new Terning();
+        terning2 = new Terning();
     }
 
-    public int rulRaflebæger()
+    public void rulRaflebaeger()
     {
         terningSum = terning1.rul()+terning2.rul();
+
+    }
+
+    public int getRaflebaeger()
+    {
         return terningSum;
     }
 
-    public int getRaflebæger()
+    public void setRaflebaeger()
     {
-        return terningSum;
-    }
-
-    public void setRaflebæger()
-    {
-        terningSum = terning1.rul()+terning2.rul();
+        terningSum = terning1.getSider()+terning2.getSider();
     }
 
     public static void main(String[] args){
 
         Raflebaeger raflebaeger = new Raflebaeger();
 
-        int kast = raflebaeger.getRaflebæger();
-        System.out.println(kast);
+        raflebaeger.rulRaflebaeger();
+        System.out.println(raflebaeger.getRaflebaeger());
     }
 
 

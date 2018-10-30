@@ -1,11 +1,18 @@
+import java.util.Random;
 public class Terning
 {
 
-    private int sider = 1;
+    private int sider;
+    private final int MAX = 6;
+
+    public Terning()
+    {
+        sider = 1;
+    }
 
     public void setSider()
     {
-        sider = (int)(Math.random()*6)+1;
+        sider = (int)(Math.random()*MAX)+1;
     }
 
     public int getSider()
@@ -15,7 +22,7 @@ public class Terning
 
     public int rul()
     {
-        sider = (int)(Math.random()*6)+1;
+        sider = (int)(Math.random()*MAX)+1;
         return sider;
     }
 
