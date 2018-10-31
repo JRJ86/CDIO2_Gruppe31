@@ -1,5 +1,5 @@
 public class Spilfunktioner {
-
+    private static Spiller[] spillerListe;
 
     /**
      * @author Filip
@@ -13,14 +13,22 @@ public class Spilfunktioner {
         return (spiller.getPenge() >= 3000);
     }
 
-    public static Spiller[] lavSpillere(int antalSpillere) {
-        Spiller[] spillerListe = new Spiller[antalSpillere];
+    public static void lavSpillere(int antalSpillere) {
+        spillerListe = new Spiller[antalSpillere];
         for(int i=0;i<antalSpillere;i++) {
             spillerListe[i] = new Spiller();
             spillerListe[i].setId(i);
-        }return spillerListe;
+        }
     }
 
+    public static Spiller[] getSpillerListe(){
+        return spillerListe;
+    }
+
+    public static Spiller getSpiller(int spillerNr){
+
+       return getSpillerListe()[spillerNr];
+    }
 
 
 
