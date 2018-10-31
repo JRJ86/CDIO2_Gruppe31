@@ -17,7 +17,7 @@ public class Spiller {
         }
     }
 
-    public int[] getSpillerListe() {return spillerListe;}
+    public Spiller[] getSpillerListe() {return spillerListe;}
 
     public void setId(int a) {id=a;}
 
