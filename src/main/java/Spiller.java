@@ -28,6 +28,4 @@ public class Spiller {
     public void setNavn(String navn) {
         this.navn = navn;
     }
-
-
 }
