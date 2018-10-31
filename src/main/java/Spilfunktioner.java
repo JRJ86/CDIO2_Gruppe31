@@ -13,6 +13,11 @@ public class Spilfunktioner {
         return (spiller.getPenge() >= 3000);
     }
 
+    /**
+     * @author andreas
+     * Laver en liste for spillerobjekter.
+     * @param antalSpillere det antal af spillere der deltager i spillet. TODO: hvor skal denne variabel defineres?
+     */
     public static void lavSpillere(int antalSpillere) {
         spillerListe = new Spiller[antalSpillere];
         for(int i=0;i<antalSpillere;i++) {
