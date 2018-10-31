@@ -31,7 +31,7 @@ public class TekstController {
      * ordnet efter sprogets nr (dvs. det samme nummer man skal
      * bruge hvis man ønsker at sætte nuværendesprog til det pågælende sprog).
      */
-    private static String[] getAlleSprog(){
+    static String[] getAlleSprog(){
         File[] sprogFiler = getSprogFiler();
         if(sprogFiler != null) {
             String[] sprog = new String[sprogFiler.length];
