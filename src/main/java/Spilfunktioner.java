@@ -2,9 +2,7 @@ public class Spilfunktioner {
 
     public boolean harSpillerVundet(Spiller spiller){
 
-
-
-        return false;
+        return (spiller.getPenge() >= 3000);
     }
 
 
