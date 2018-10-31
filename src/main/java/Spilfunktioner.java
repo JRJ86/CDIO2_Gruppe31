@@ -8,10 +8,20 @@ public class Spilfunktioner {
      * @param spiller hvilken spiller man vil tjekke
      * @return har spilleren vundet eller ej (true = har vundet, false = har ikke vundet)
      */
-    public boolean harSpillerVundet(Spiller spiller){
+    public static boolean harSpillerVundet(Spiller spiller){
 
         return (spiller.getPenge() >= 3000);
     }
+
+    public static Spiller[] lavSpillere(int antalSpillere) {
+        Spiller[] spillerListe = new Spiller[antalSpillere];
+        for(int i=0;i<antalSpillere;i++) {
+            spillerListe[i] = new Spiller();
+            spillerListe[i].setId(i);
+        }return spillerListe;
+    }
+
+
 
 
 }
