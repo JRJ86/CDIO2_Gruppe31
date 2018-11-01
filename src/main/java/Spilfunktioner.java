@@ -1,5 +1,5 @@
 public class Spilfunktioner {
-
+    private static Spiller[] spillerListe;
 
     /**
      * @author Filip
@@ -8,10 +8,33 @@ public class Spilfunktioner {
      * @param spiller hvilken spiller man vil tjekke
      * @return har spilleren vundet eller ej (true = har vundet, false = har ikke vundet)
      */
-    public boolean harSpillerVundet(Spiller spiller){
+    public static boolean harSpillerVundet(Spiller spiller){
 
         return (spiller.getPenge() >= 3000);
     }
+
+    /**
+     * @author andreas
+     * Laver en liste for spillerobjekter.
+     * @param antalSpillere det antal af spillere der deltager i spillet. TODO: hvor skal denne variabel defineres?
+     */
+    public static void lavSpillere(int antalSpillere) {
+        spillerListe = new Spiller[antalSpillere];
+        for(int i=0;i<antalSpillere;i++) {
+            spillerListe[i] = new Spiller();
+            spillerListe[i].setId(i);
+        }
+    }
+
+    public static Spiller[] getSpillerListe(){
+        return spillerListe;
+    }
+
+    public static Spiller getSpiller(int spillerNr){
+
+       return getSpillerListe()[spillerNr];
+    }
+
 
 
 }

@@ -3,21 +3,17 @@ import java.util.Scanner;
 public class Spiller {
 
     private int id;
-    private String navn;
     private int penge=1000;
-    private int antalSpillere =2;
-    private Spiller[] spillerListe = new Spiller[antalSpillere];
+    static int count =0;
 
-    public void lavSpillere(Spiller[] spillerListe) {
-        Scanner sc = new Scanner(System.in);
-        for(int i=0;i<getSpillerListe().length;i++) {
-            spillerListe[i] = new Spiller();
-            spillerListe[i].setId(i);
-            spillerListe[i].setNavn(sc.nextLine());
-        }
+    /**@author Andreas
+     * Constroctor kan i dette tilfælde udelades, da der ikke anvendes parametre. Har dog valgt at tage den med idet det, det fremmer forståelsen syntes jeg
+     */
+    public Spiller () {
+
+
     }
 
-    public Spiller[] getSpillerListe() {return spillerListe;}
 
     public void setId(int a) {id=a;}
 
@@ -25,7 +21,7 @@ public class Spiller {
 
     public void setPenge(int penge) {this.penge=penge;}
 
-    public void setNavn(String navn) {
-        this.navn = navn;
+    public int getId(){
+        return id;
     }
 }
