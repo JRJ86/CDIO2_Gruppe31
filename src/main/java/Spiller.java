@@ -19,10 +19,9 @@ public class Spiller {
 
     public int getPenge() {return penge;}
 
-    public void setPenge(int penge) {this.penge=penge;}
+    public void setPenge(int nyPenge) {this.penge=nyPenge;}
 
     public int getId(){
         return id;
     }
-
 }
