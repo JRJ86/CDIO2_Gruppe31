@@ -35,6 +35,10 @@ public class Spilfunktioner {
        return getSpillerListe()[spillerNr];
     }
 
+    public void justerSpillerPenge(int spillerId, int pengeJustering) {
 
+            int nyPenge=getSpiller(spillerId).getPenge()-pengeJustering;
+            getSpiller(spillerId).setPenge(nyPenge);
+    }
 
 }
