@@ -24,5 +24,4 @@ public class Spiller {
     public int getId(){
         return id;
     }
-
 }
