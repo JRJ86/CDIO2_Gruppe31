@@ -37,7 +37,7 @@ public class Spilfunktioner {
 
     public void justerSpillerPenge(int spillerId, int pengeJustering) {
 
-            int nyPenge=getSpiller(spillerId).getPenge()-pengeJustering;
+            int nyPenge=getSpiller(spillerId).getPenge()+pengeJustering;
             getSpiller(spillerId).setPenge(nyPenge);
     }
 
