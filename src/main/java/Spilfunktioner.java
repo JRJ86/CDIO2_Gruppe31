@@ -13,4 +13,8 @@ public class Spilfunktioner {
         return raflesum;
 
     }
+    public static void main(String[] args){
+        Raflebaeger raflebaeger = new Raflebaeger();
+
+    }
 }
