@@ -1,22 +1,19 @@
 public class Spilfunktioner {
 
-    int raflesum;
-    Raflebaeger raflebaeger = new Raflebaeger();
-
     /**
      * @author Jacob og Andreas
      * Metode som kaster med raflebægeret og return vaerdien
      */
-    public int rafleKast(){
+    public static int rafleKast(){
 
-        raflesum = raflebaeger.getTerningSum();
-        return raflesum;
-
-    }
-    public static void main(String[] args){
         Raflebaeger raflebaeger = new Raflebaeger();
 
+        raflebaeger.kast();
+
+        return Raflebaeger.getTerningSum();
+
     }
+
     private static Spiller[] spillerListe;
 
     /**
