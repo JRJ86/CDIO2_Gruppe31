@@ -56,9 +56,5 @@ public class Spilfunktioner {
             getSpiller(spillerId).setPenge(nyPenge);
     }
 
-    public static void main(String[] args){
-        System.out.println(rafleKast());
-
-    }
 
 }
