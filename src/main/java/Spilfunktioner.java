@@ -48,7 +48,7 @@ public class Spilfunktioner {
      * @author Chua
      * laver en liste for felter
      */
-        public void lavfelter()
+        public static void lavfelter()
         {
             Felt Felt2 = new Felt();
             Felt2.setVaerdi(+250);
@@ -97,6 +97,11 @@ public class Spilfunktioner {
             felter[9] = Felt11;
             felter[10] = Felt12;
             //Lavet en liste af objekter fra med index 0 til 11, som indeholder objekterne "Felt" fra 2 til 12
+
+        }
+        public static int getVaerdi(int feltnummer){
+            lavfelter();
+            return felter[feltnummer].getVaerdi();
 
         }
 
