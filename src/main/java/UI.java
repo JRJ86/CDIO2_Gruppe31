@@ -12,13 +12,28 @@ public class UI {
 
         UI ui = new UI();
 
+        ui.printIntro();
+
         ui.startSpil();
 
 
     }
 
 
-    public void printIntro(){}
+    /**
+     * @author Filip
+     * Metode der printer spillets intro
+     */
+    public void printIntro(){
+
+        System.out.println("----------------------");
+        System.out.println(Tekst.velkommen());
+        System.out.println(Tekst.spilNavn());
+        System.out.println("----------------------");
+        System.out.println(Tekst.spilBeskrivelse());
+        System.out.println("----------------------");
+
+    }
 
     /**
      * @author Filip
@@ -68,6 +83,5 @@ public class UI {
     public void printVinder(int SpillerNr){}
 
     public void farvelPrint(){}
-
 
 }
