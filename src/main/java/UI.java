@@ -8,13 +8,15 @@ public class UI {
     Scanner input = new Scanner(System.in);
 
 
-    public static void main(String[] args) {
+    public void vaelgSprog(){
+        int sprog;
 
-        UI ui = new UI();
+        System.out.println(saetSprog());
+        for(int i = 0; i<TekstController.getAlleSprog().length;i++){
+            System.out.println(i + " "+TekstController.getAlleSprog()[i]);
+        }
 
-        ui.startSpil();
-
-        ui.farvelPrint();
+        TekstController.setSprog(input.nextInt());
 
     }
 
@@ -73,13 +75,22 @@ public class UI {
         System.out.println(Tekst.spillerTur1()+" "+spillerTur+" "+Tekst.spillerTur2());
     }
 
-    public void slåRaflebaeger(){}
+    public void slåRaflebaeger(){
+        System.out.println(Tekst.slaaMedTerning());
 
-    public void printTerning(int terningVerdi){}
+    }
+
+    public void printTerning(int terningVerdi){
+        System.out.println(Tekst.printTerning());
+
+
+    }
 
     public void printFelt(int FeltNr){}
 
-    public void printSpillerPenge(int spillerPenge){}
+    public void printSpillerPenge(int spillerPenge){
+        System.out.println(Tekst.penge1()+spillerPenge+Tekst.penge2());
+    }
 
     public void printVinder(int SpillerNr){}
 
