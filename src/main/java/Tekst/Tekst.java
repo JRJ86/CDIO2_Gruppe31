@@ -102,5 +102,6 @@ public class Tekst {
     public static String harVundet2(){return TekstController.getTekst(34);}
     public static String spillerMedSmaat(){return TekstController.getTekst(35);}
     public static String spillerMedStort(){return TekstController.getTekst(36);}
+    public static String slaaMedTerning(){return TekstController.getTekst(37);}
 
 }

@@ -12,8 +12,6 @@ public class UI {
 
         UI ui = new UI();
 
-        ui.printIntro();
-
         ui.startSpil();
 
 
@@ -70,7 +68,9 @@ public class UI {
 
     }
 
-    public void printTur(int spillerTur){}
+    public void printTur(int spillerTur){
+        System.out.println(Tekst.spillerTur1()+" "+spillerTur+" "+Tekst.spillerTur2());
+    }
 
     public void slåRaflebaeger(){}
 
@@ -83,5 +83,6 @@ public class UI {
     public void printVinder(int SpillerNr){}
 
     public void farvelPrint(){}
+
 
 }
