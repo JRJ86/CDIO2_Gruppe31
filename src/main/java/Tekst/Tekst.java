@@ -11,4 +11,8 @@ public class Tekst {
         return TekstController.getTekst(2);
     }
 
+    public static String klosterTitel() {
+        return "";
+    }
+
 }
