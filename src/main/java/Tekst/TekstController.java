@@ -72,7 +72,7 @@ public class TekstController {
     public static void setSprog(int index){
         File[] sprogFiler = getSprogFiler();
         if(sprogFiler != null ){
-            if(index>0 && index<sprogFiler.length){
+            if(index>=0 && index<sprogFiler.length){
                 nuvaerendeSprogFil = sprogFiler[index];
             }else{
                 System.out.println("FEJL: Forsøgte at sætte ikke-eksisterende sprog!"); } }
@@ -176,40 +176,5 @@ public class TekstController {
         String tekst = getLinjeFraFil(getNuvaerendeSprogFil(), linjeNummer);
         if(tekst != null){return findPrintbarTekst(tekst); }
         else{return null;}
-    }
-
-
-    public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        String[] sprog = getAlleSprog();
-
-        File fil = getNuvaerendeSprogFil();
-        System.out.println(getLinjeFraFil(fil, 10));
-
-        if (sprog != null) {
-            for (int i = 0; i < sprog.length; i++) {
-                System.out.println("" + i + ") " + sprog[i]);
-            }
-
-
-            do {
-                int input = scanner.nextInt();
-
-                if (input >= 0 && input < sprog.length) {
-                    setSprog(input);
-                    break;
-                } else if (input == 999) {
-                    break;
-                } else {
-                    System.out.println("Forkert input");
-                }
-
-            } while (true);
-
-            System.out.println(Tekst.guldMineTitel());
-            System.out.println(Tekst.guldMineBeskrivelse());
-
-            scanner.close();
-        }
     }
 }

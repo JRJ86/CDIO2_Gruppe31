@@ -4,7 +4,7 @@ taarnetBeskrivelse: *Du kunne svare paa dragens gaade, og har vundets dens skat 
 kraterTitel: *Krater*
 kraterBeskrivelse: *Du har tabt 100 guldmoenter i et krater - flot.*
 paladsetTitel: *Paladset*
-paladsetBeskrivelse: *Du bragte prinsessen hjem til paladset, og faaet 100 guldmoenter som beloenning - naerrigroeve.
+paladsetBeskrivelse: *Du bragte prinsessen hjem til paladset, og faaet 100 guldmoenter som beloenning - naerrigroeve.*
 koldOerkenTitel: *Kold Oerken*
 koldOerkenBeskrivelse: *Du er havnet i den kolde oerken, og bliver noedt til at koebe noget varmere toej for 20 guldmoenter.*
 muretByTitel: *Muret By*
@@ -32,7 +32,7 @@ landetPaa: *Du er landet paa feltet:*
 penge1: *Du har nu*
 penge2: *guldmoenter.*
 farvel: *Tak for spillet - farvel!*
-harVundet2: *har faaet 3000 guldmoenter og vinder spillet!"
+harVundet2: *har faaet 3000 guldmoenter og vinder spillet!*
 spillerMedSmaat: *spiller*
 spillerMedStort: *Spiller*
 slaaMedTerning: *Tast 1 for at slaa med terningen.*

@@ -4,8 +4,6 @@ import Tekst.TekstController;
 
 import java.util.Scanner;
 
-import static Tekst.Tekst.saetSprog;
-
 public class UI {
     Scanner input = new Scanner(System.in);
 
@@ -13,12 +11,27 @@ public class UI {
     public void vaelgSprog(){
         int sprog;
 
-        System.out.println(saetSprog());
-        for(int i = 0; i<TekstController.getAlleSprog().length;i++){
+        System.out.println(Tekst.saetSprog());
+        int antalSprog = TekstController.getAlleSprog().length;
+        for(int i = 0; i<antalSprog;i++){
             System.out.println(i + " "+TekstController.getAlleSprog()[i]);
         }
 
-        TekstController.setSprog(input.nextInt());
+        int tal = 0;
+
+        while (true){
+
+            tal = input.nextInt();
+
+            if (tal >= 0 && tal <antalSprog){
+                break;
+            }
+            else{
+                System.out.println("Forkert input, prøv igen");
+            }
+        }
+
+        TekstController.setSprog(tal);
 
     }
 
@@ -73,38 +86,68 @@ public class UI {
 
     }
 
+    /**
+     * @author Malte
+     * @param spillerTur hvis spiller tur skal printes */
     public void printTur(int spillerTur){
-        System.out.println(Tekst.spillerTur1()+" "+spillerTur+" "+Tekst.spillerTur2());
+        System.out.println(Tekst.spillerTur1()+" "+spillerTur+Tekst.spillerTur2());
     }
 
+    /**
+     * @author Andreas & Malte
+     */
     public void slåRaflebaeger(){
+
         System.out.println(Tekst.slaaMedTerning());
 
+        while (true){
+
+            int tal = input.nextInt();
+
+            if (tal == 1){
+                break;
+            }
+            else{
+                System.out.println("Forkert input, prøv igen");
+            }
+        }
     }
+
 
     public void printTerning(int terningVerdi){
-        System.out.println(Tekst.printTerning());
-
-
+        System.out.println(Tekst.printTerning()+terningVerdi);
     }
 
-    public void printFelt(int FeltNr){}
+    /**
+     * @author Malte
+     * @param feltNr For hvilket felt nummer man gerne vil printe */
+    public void printFelt(int feltNr){
+        System.out.println(Tekst.landetPaa());
+        System.out.println(Tekst.feltTitel(feltNr));
+        System.out.println(Tekst.feltBeskrivelse(feltNr));
+    }
 
     public void printSpillerPenge(int spillerPenge){
         System.out.println(Tekst.penge1()+spillerPenge+Tekst.penge2());
     }
 
-    public void printVinder(int SpillerNr){}
+    /**
+     * @author Malte
+     * @param SpillerNr Spillerens nummer, der har vundet
+     */
+    public void printVinder(int SpillerNr){
+        System.out.println(Tekst.spillerMedStort()+" "+SpillerNr+" "+Tekst.harVundet2());
+    }
 
-    public void farvelPrint(){}
+    /**
+     * @author Filip
+     * Metode der printer et farvel når spillet er slut
+     */
+    public void farvelPrint(){
 
-
-    public static void main(String[] args) {
-        UI hej = new UI();
-
-        hej.vaelgSprog();
-
-
+        System.out.println("----------------------");
+        System.out.println(Tekst.farvel());
+        System.out.println("----------------------");
 
     }
 
