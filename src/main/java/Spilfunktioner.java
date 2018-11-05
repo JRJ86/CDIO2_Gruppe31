@@ -1,5 +1,7 @@
 public class Spilfunktioner {
 
+    //OBS!! Alle metoder herinde skal være static
+
     /**
      * @author Jacob og Andreas
      * Metode som kaster med raflebægeret og return vaerdien
@@ -10,7 +12,7 @@ public class Spilfunktioner {
 
         raflebaeger.kast();
 
-        return Raflebaeger.getTerningSum();
+        return raflebaeger.getTerningSum();
 
     }
 
