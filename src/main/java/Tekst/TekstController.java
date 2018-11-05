@@ -177,39 +177,4 @@ public class TekstController {
         if(tekst != null){return findPrintbarTekst(tekst); }
         else{return null;}
     }
-
-
-    public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        String[] sprog = getAlleSprog();
-
-        File fil = getNuvaerendeSprogFil();
-        System.out.println(getLinjeFraFil(fil, 10));
-
-        if (sprog != null) {
-            for (int i = 0; i < sprog.length; i++) {
-                System.out.println("" + i + ") " + sprog[i]);
-            }
-
-
-            do {
-                int input = scanner.nextInt();
-
-                if (input >= 0 && input < sprog.length) {
-                    setSprog(input);
-                    break;
-                } else if (input == 999) {
-                    break;
-                } else {
-                    System.out.println("Forkert input");
-                }
-
-            } while (true);
-
-            System.out.println(Tekst.guldMineTitel());
-            System.out.println(Tekst.guldMineBeskrivelse());
-
-            scanner.close();
-        }
-    }
 }
