@@ -11,7 +11,7 @@ public class UI {
     public void vaelgSprog(){
         int sprog;
 
-        System.out.println(saetSprog());
+        System.out.println(Tekst.saetSprog());
         for(int i = 0; i<TekstController.getAlleSprog().length;i++){
             System.out.println(i + " "+TekstController.getAlleSprog()[i]);
         }
@@ -78,15 +78,29 @@ public class UI {
         System.out.println(Tekst.spillerTur1()+" "+spillerTur+Tekst.spillerTur2());
     }
 
+    /**
+     * @author Andreas & Malte
+     */
     public void slåRaflebaeger(){
+
         System.out.println(Tekst.slaaMedTerning());
 
+        while (true){
+
+            int tal = input.nextInt();
+
+            if (tal == 1){
+                break;
+            }
+            else{
+                System.out.println("Forkert input, prøv igen");
+            }
+        }
     }
 
+
     public void printTerning(int terningVerdi){
-        System.out.println(Tekst.printTerning());
-
-
+        System.out.println(Tekst.printTerning()+terningVerdi);
     }
 
     /**
@@ -122,5 +136,12 @@ public class UI {
 
     }
 
+
+    public static void main(String[] args) {
+        UI ui = new UI();
+
+        ui.slåRaflebaeger();
+        ui.printTerning(10);
+    }
 
 }
