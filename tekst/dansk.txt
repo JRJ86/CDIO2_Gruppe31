@@ -4,7 +4,7 @@ taarnetBeskrivelse: *Du kunne svare paa dragens gaade, og har vundets dens skat 
 kraterTitel: *Krater*
 kraterBeskrivelse: *Du har tabt 100 guldmoenter i et krater - flot.*
 paladsetTitel: *Paladset*
-paladsetBeskrivelse: *Du bragte prinsessen hjem til paladset, og faaet 100 guldmoenter som beloenning - naerrigroeve.
+paladsetBeskrivelse: *Du bragte prinsessen hjem til paladset, og faaet 100 guldmoenter som beloenning - naerrigroeve.*
 koldOerkenTitel: *Kold Oerken*
 koldOerkenBeskrivelse: *Du er havnet i den kolde oerken, og bliver noedt til at koebe noget varmere toej for 20 guldmoenter.*
 muretByTitel: *Muret By*
