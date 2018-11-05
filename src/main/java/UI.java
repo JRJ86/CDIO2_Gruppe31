@@ -12,11 +12,26 @@ public class UI {
         int sprog;
 
         System.out.println(Tekst.saetSprog());
-        for(int i = 0; i<TekstController.getAlleSprog().length;i++){
+        int antalSprog = TekstController.getAlleSprog().length;
+        for(int i = 0; i<antalSprog;i++){
             System.out.println(i + " "+TekstController.getAlleSprog()[i]);
         }
 
-        TekstController.setSprog(input.nextInt());
+        int tal = 0;
+
+        while (true){
+
+            tal = input.nextInt();
+
+            if (tal >= 0 && tal <antalSprog){
+                break;
+            }
+            else{
+                System.out.println("Forkert input, prøv igen");
+            }
+        }
+
+        TekstController.setSprog(tal);
 
     }
 
@@ -140,8 +155,8 @@ public class UI {
     public static void main(String[] args) {
         UI ui = new UI();
 
-        ui.slåRaflebaeger();
-        ui.printTerning(10);
+        ui.vaelgSprog();
+        ui.printFelt(2);
     }
 
 }

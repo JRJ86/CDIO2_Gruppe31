@@ -72,7 +72,7 @@ public class TekstController {
     public static void setSprog(int index){
         File[] sprogFiler = getSprogFiler();
         if(sprogFiler != null ){
-            if(index>0 && index<sprogFiler.length){
+            if(index>=0 && index<sprogFiler.length){
                 nuvaerendeSprogFil = sprogFiler[index];
             }else{
                 System.out.println("FEJL: Forsøgte at sætte ikke-eksisterende sprog!"); } }
