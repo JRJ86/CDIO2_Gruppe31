@@ -69,7 +69,7 @@ public class TekstController {
      *  til filen, med det pågældende index.
      * @param index sprogets listeindex, hvis man henter sprog via getSprog()
      */
-    static void setSprog(int index){
+    public static void setSprog(int index){
         File[] sprogFiler = getSprogFiler();
         if(sprogFiler != null ){
             if(index>0 && index<sprogFiler.length){

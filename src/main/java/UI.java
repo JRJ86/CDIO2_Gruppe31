@@ -1,6 +1,22 @@
-public class UI {
+import Tekst.TekstController;
 
-    public void vaelgSprog(){}
+import java.util.Scanner;
+
+public class UI {
+    Scanner input = new Scanner(System.in);
+
+
+    public void vaelgSprog(){
+        int sprog;
+
+
+        TekstController.getAlleSprog();
+
+
+
+        TekstController.setSprog(input.nextInt());
+
+    }
 
     public void printIntro(){}
 
@@ -20,5 +36,14 @@ public class UI {
 
     public void farvelPrint(){}
 
+
+    public static void main(String[] args) {
+        UI hej = new UI();
+
+        hej.vaelgSprog();
+
+
+
+    }
 
 }
