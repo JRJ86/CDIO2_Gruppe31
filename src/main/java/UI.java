@@ -22,7 +22,21 @@ public class UI {
 
     }
 
-    public void printIntro(){}
+
+    /**
+     * @author Filip
+     * Metode der printer spillets intro
+     */
+    public void printIntro(){
+
+        System.out.println("----------------------");
+        System.out.println(Tekst.velkommen());
+        System.out.println(Tekst.spilNavn());
+        System.out.println("----------------------");
+        System.out.println(Tekst.spilBeskrivelse());
+        System.out.println("----------------------");
+
+    }
 
     /**
      * @author Filip
@@ -60,14 +74,16 @@ public class UI {
     }
 
     public void printTur(int spillerTur){
-        System.out.println(Tekst.spillerTur1()+" "+spillerTur+" "+Tekst.spillerTur2());
+        System.out.println(Tekst.spillerTur1()+" "+spillerTur+Tekst.spillerTur2());
     }
 
     public void slåRaflebaeger(){
         System.out.println(Tekst.slaaMedTerning());
     }
 
-    public void printTerning(int terningVerdi){}
+    public void printTerning(int terningVerdi){
+
+    }
 
     public void printFelt(int FeltNr){}
 
@@ -81,9 +97,7 @@ public class UI {
     public static void main(String[] args) {
         UI hej = new UI();
 
-        hej.vaelgSprog();
-
-
+        hej.printTur(1);
 
     }
 
