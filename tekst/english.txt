@@ -1,7 +1,42 @@
 sprog: *English*
+TaarnetTitel: *Tower*
+TaarnetBeskrivelse: *You were able to answer the dragons riddle, and won its treasure - you've received 250 goldcoins!*
+kraterTitel: *Crater*
+kraterBeskrivelse: *You have lost 100 goldcoins in a crater! -GREAT*
+paladsetTitel: *Palace*
+paladsetBeskrivelse: *You have brought the princess back to the palace. For this heroic act you'll receive 100 goldcoins - cheapskates.*
+koldOerkenTitel: *Cold desert*
+koldOerkenBeskrivelse: *You find yourself in a cold, cold desert. You have to buy some warm cloths for 20 goldcoins.*
+muretByTitel: *Walled city*
+muretByBeskrivelse: *You have helped the city by reparing the walls - simultaneously you are killing some orcs - and you receive 180 goldcoins.*
+klosterTitel: *Monastery*
+klosterBeskrivelse: *You drank with the monks - you won a bet but used all your goldcoins on booze.*
+moerkGrotteTitel: *Dark Cave*
+moerkGrotteBeskrivelse: *You forgot a bag of 70 goldcoins - you'll probably not find them again.*
+bjergHytterTitel: *Mountain hut*
+bjergHytterBeskrivelse: *You found 60 goldcoins in a hut far away in the misty mountains - you better get the heck out of there if you want to keep them.*
+varulveMurenTitel: *Werewall*
+varulveMurenBeskrivelse: *You have traversed the werewall and had to give them 60 goldcoins if you did'nt want them to eat you. On the other hand you can't sleep, so you can toss again.*
+hulletTitel: *The pit*
+hulletBeskrivelse: *You threw 50 goldcoins into the pit, because you thought it was a wish-granting well... fool.*
 guldMineTitel: *Goldmine*
 guldMineBeskrivelse: *You found gold in the mountains and sell it for 650, you're rich!*
-
+spilNavn: *Slaa Et Eventyr*
+velkommen: *Velkommen til*
+spilBeskrivelse: *Slaa med terningen, og se hvilket eventyr det bringer jer paa. Den foerste, der faar 3000 guldmoenter vinder spillet.*
+setSprog: *Hvilket sprog skal spiller være på? Tast nummeret på det sprog du ønsker*
+startSpil: *Tast 1 for at starte spillet*
+tur1: *Det er spiller*
+tur2: *'s tur.*
+landetPaa: *Du er landet paa feltet:*
+penge1: *Du har nu*
+penge2: *guldmoenter.*
+farvel: *Tak for spillet - farvel!*
+harVundet2: *har faaet 3000 guldmoenter og vinder spillet!"
+spillerMedSmaat: *spiller*
+spillerMedStort: *Spiller*
+slaaMedTerning: *Tast 1 for at slaa med terningen.*
+printTerning: *Du har slaaet *
 
 
 
