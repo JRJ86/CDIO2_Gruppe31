@@ -61,7 +61,7 @@ public class Spilfunktioner {
     /**
      * @author Filip
      * @param spiller hvilken spiller bliver tjekket
-     * @return spillerens pengebeholdning
+     * @return returnerer spillerens pengebeholdning
      */
     public static int getSpillerPenge(Spiller spiller){
 
