@@ -18,9 +18,11 @@ public class UI {
             System.out.println(i + " "+TekstController.getAlleSprog()[i]);
         }
 
+
         TekstController.setSprog(input.nextInt());
 
     }
+
 
     public void printIntro(){}
 
@@ -59,7 +61,9 @@ public class UI {
 
     }
 
-    public void printTur(int spillerTur){}
+    public void printTur(int spillerTur){
+        System.out.println(Tekst.spillerTur1()+" "+spillerTur+" "+Tekst.spillerTur2());
+    }
 
     public void slåRaflebaeger(){}
 
@@ -73,14 +77,5 @@ public class UI {
 
     public void farvelPrint(){}
 
-
-    public static void main(String[] args) {
-        UI hej = new UI();
-
-        hej.vaelgSprog();
-
-
-
-    }
 
 }
