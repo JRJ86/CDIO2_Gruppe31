@@ -74,14 +74,17 @@ public class UI {
     }
 
     public void printTur(int spillerTur){
-        System.out.println(Tekst.spillerTur1()+" "+spillerTur+Tekst.spillerTur2());
+        System.out.println(Tekst.spillerTur1()+" "+spillerTur+" "+Tekst.spillerTur2());
     }
 
     public void slåRaflebaeger(){
         System.out.println(Tekst.slaaMedTerning());
+
     }
 
     public void printTerning(int terningVerdi){
+
+
 
     }
 
@@ -97,7 +100,9 @@ public class UI {
     public static void main(String[] args) {
         UI hej = new UI();
 
-        hej.printTur(1);
+        hej.vaelgSprog();
+
+
 
     }
 
