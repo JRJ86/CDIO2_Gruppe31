@@ -27,7 +27,7 @@ spilBeskrivelse: *Slaa med terningen, og se hvilket eventyr det bringer jer paa.
 setSprog: *Hvilket sprog skal spiller være på?*
 startSpil: *Tast 1 for at starte spillet*
 tur1: *Det er spiller*
-tur2: *'s tur. Tast 1 for at slaa med terningen.*
+tur2: *'s tur.*
 landetPaa: *Du er landet paa feltet:*
 penge1: *Du har nu*
 penge2: *guldmoenter.*
@@ -35,3 +35,4 @@ farvel: *Tak for spillet - farvel!*
 harVundet2: *har faaet 3000 guldmoenter og vinder spillet!"
 spillerMedSmaat: *spiller*
 spillerMedStort: *Spiller*
+slaaMedTerning: *Tast 1 for at slaa med terningen.*

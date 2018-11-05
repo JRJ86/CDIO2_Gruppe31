@@ -8,15 +8,17 @@ public class UI {
     Scanner input = new Scanner(System.in);
 
 
-    public static void main(String[] args) {
+    public void vaelgSprog(){
+        int sprog;
 
-        UI ui = new UI();
 
-        ui.startSpil();
+        TekstController.getAlleSprog();
 
+
+
+        TekstController.setSprog(input.nextInt());
 
     }
-
 
     public void printIntro(){}
 
@@ -55,7 +57,9 @@ public class UI {
 
     }
 
-    public void printTur(int spillerTur){}
+    public void printTur(int spillerTur){
+        System.out.println(Tekst.spillerTur1()+" "+spillerTur+" "+Tekst.spillerTur2());
+    }
 
     public void slåRaflebaeger(){}
 
@@ -69,5 +73,12 @@ public class UI {
 
     public void farvelPrint(){}
 
+
+    public static void main(String[] args) {
+        UI hej = new UI();
+
+        hej.printTur(1);
+
+    }
 
 }
