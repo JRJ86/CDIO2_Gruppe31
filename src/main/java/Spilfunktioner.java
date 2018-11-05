@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.Random;
 
 public class Spilfunktioner {
 
@@ -61,6 +62,7 @@ public class Spilfunktioner {
     public void justerSpillerPenge(int spillerId, int pengeJustering) {
 
             int nyPenge=getSpiller(spillerId).getPenge()+pengeJustering;
+            if(nyPenge<0) {nyPenge=0;}
             getSpiller(spillerId).setPenge(nyPenge);
     }
 
@@ -119,5 +121,12 @@ public class Spilfunktioner {
             //Lavet en liste af objekter fra med index 0 til 11, som indeholder objekterne "Felt" fra 2 til 12
 
         }
+
+    public static Spiller getRandomSpiller() {
+        Random rand = new Random(2);
+
+        int spillerNr = rand.nextInt();
+        return getSpillerListe()[spillerNr];
+    }
 
 }
