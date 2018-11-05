@@ -151,12 +151,4 @@ public class UI {
 
     }
 
-
-    public static void main(String[] args) {
-        UI ui = new UI();
-
-        ui.vaelgSprog();
-        ui.printFelt(2);
-    }
-
 }
