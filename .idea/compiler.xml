@@ -10,5 +10,9 @@
         <module name="terningespil-cdio2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CDIO2_Gruppe31" target="1.5" />
+      <module name="terningespil-cdio2" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

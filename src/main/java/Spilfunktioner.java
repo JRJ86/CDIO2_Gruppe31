@@ -1,7 +1,27 @@
 import java.sql.SQLOutput;
 
 public class Spilfunktioner {
+
     private static Felt[] felter;
+
+
+    //OBS!! Alle metoder herinde skal være static
+
+    /**
+     * @author Jacob og Andreas
+     * Metode som kaster med raflebægeret og return vaerdien
+     */
+    public static int rafleKast(){
+
+        Raflebaeger raflebaeger = new Raflebaeger();
+
+        raflebaeger.kast();
+
+        
+        return raflebaeger.getTerningSum();
+
+    }
+
     private static Spiller[] spillerListe;
 
     /**
