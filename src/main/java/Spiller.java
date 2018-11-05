@@ -1,6 +1,5 @@
-import java.util.Scanner;
-
 public class Spiller {
+
 
     private int id;
     private int penge=1000;
