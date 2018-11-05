@@ -83,7 +83,7 @@ public class UI {
     }
 
     public void printTerning(int terningVerdi){
-
+        System.out.println(Tekst.printTerning());
 
 
     }
