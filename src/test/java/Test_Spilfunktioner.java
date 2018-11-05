@@ -28,31 +28,31 @@ public class Test_Spilfunktioner {
 
     @Test
     public void Test_justerSpillerPenge() {
-        Spiller [] spillerListe= new Spiller[2];
-        spillerListe[0]=new Spiller();
+        Spiller[] spillerListe = new Spiller[2];
+        spillerListe[0] = new Spiller();
         spillerListe[0].setId(1);
 
-        spillerListe[1]=new Spiller();
+        spillerListe[1] = new Spiller();
         spillerListe[1].setId(2);
-        int pengeJustering=-1002;
-        int pengeJusteringSP2=500;
-        Spiller a=new Spiller();
-        int spillerId=a.getId();
+        int pengeJustering = -1002;
+        int pengeJusteringSP2 = 500;
+        Spiller a = new Spiller();
+        int spillerId = a.getId();
 
 
-        System.out.println("Spiller 1 har: "+spillerListe[0].getPenge());
-        System.out.println("Spiller 2 har "+spillerListe[1].getPenge());
+        System.out.println("Spiller 1 har: " + spillerListe[0].getPenge());
+        System.out.println("Spiller 2 har " + spillerListe[1].getPenge());
 
-        int nyPenge=spillerListe[0].getPenge()+pengeJustering;
+        int nyPenge = spillerListe[0].getPenge() + pengeJustering;
         spillerListe[0].setPenge(nyPenge);
 
-        System.out.println("Efter pengejustering har spiller 1: "+ spillerListe[0].getPenge());
+        System.out.println("Efter pengejustering har spiller 1: " + spillerListe[0].getPenge());
 
-        int nyPenge2=spillerListe[1].getPenge()+pengeJusteringSP2;
+        int nyPenge2 = spillerListe[1].getPenge() + pengeJusteringSP2;
         spillerListe[1].setPenge(nyPenge2);
 
-        System.out.println("Efter pengejustering har spiller 2: "+ spillerListe[1].getPenge());
-
+        System.out.println("Efter pengejustering har spiller 2: " + spillerListe[1].getPenge());
+    }
     /**
      * @Author andreas
      * Der testes om et slag med raflebægeret slår værdier imellem 2 og 12, som er de maksimale og de laveste værdier der kan slås.
