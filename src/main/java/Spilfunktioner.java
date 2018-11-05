@@ -41,4 +41,21 @@ public class Spilfunktioner {
             getSpiller(spillerId).setPenge(nyPenge);
     }
 
+    /**
+     * @author Chua
+     * laver en liste for felter
+     */
+    public class spillefelt{
+        public static void (String[] args){
+        Felt Felt2 = new Felt();
+        Felt2.setVaerdi(+250);
+
+        Felt Felt3 = new Felt();
+        Felt3.setVaerdi(-100);
+
+        Felt Felt4 = new Felt();
+        Felt4.setVaerdi(-);
+
+        }
+    }
 }

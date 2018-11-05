@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="CDIO2_Gruppe31" />
+        <module name="terningespil-cdio2" />
       </profile>
     </annotationProcessing>
   </component>

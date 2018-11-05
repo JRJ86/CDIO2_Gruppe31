@@ -1,12 +1,12 @@
 class Felt{
-    Felt værdi = new Felt();
+    int vaerdi;
 
-    public void setVærdi(int værdi){
-    this.værdi=værdi;
+    public void setVaerdi(int vaerdi){
+        this.vaerdi=vaerdi;
     }
 
-    public Felt getVærdi() {
-        return værdi;
+    public int getVaerdi() {
+        return vaerdi;
     }
 
 
