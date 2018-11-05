@@ -8,19 +8,30 @@ public class UI {
     Scanner input = new Scanner(System.in);
 
 
-    public void vaelgSprog(){
-        int sprog;
+    public static void main(String[] args) {
 
+        UI ui = new UI();
 
-        TekstController.getAlleSprog();
+        ui.startSpil();
 
-
-
-        TekstController.setSprog(input.nextInt());
 
     }
 
-    public void printIntro(){}
+
+    /**
+     * @author Filip
+     * Metode der printer spillets intro
+     */
+    public void printIntro(){
+
+        System.out.println("----------------------");
+        System.out.println(Tekst.velkommen());
+        System.out.println(Tekst.spilNavn());
+        System.out.println("----------------------");
+        System.out.println(Tekst.spilBeskrivelse());
+        System.out.println("----------------------");
+
+    }
 
     /**
      * @author Filip
@@ -75,12 +86,5 @@ public class UI {
 
     public void farvelPrint(){}
 
-
-    public static void main(String[] args) {
-        UI hej = new UI();
-
-        hej.printTur(1);
-
-    }
 
 }
