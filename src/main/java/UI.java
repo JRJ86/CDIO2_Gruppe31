@@ -58,12 +58,14 @@ public class UI {
     }
 
     public void printTur(int spillerTur){
-        System.out.println(Tekst.spillerTur1()+" "+spillerTur+" "+Tekst.spillerTur2());
+        System.out.println(Tekst.spillerTur1()+" "+spillerTur+Tekst.spillerTur2());
     }
 
     public void slåRaflebaeger(){}
 
-    public void printTerning(int terningVerdi){}
+    public void printTerning(int terningVerdi){
+
+    }
 
     public void printFelt(int FeltNr){}
 
