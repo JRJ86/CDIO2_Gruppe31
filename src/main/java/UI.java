@@ -14,8 +14,9 @@ public class UI {
 
         ui.startSpil();
 
-        ui.printFelt(5);
+        ui.printFelt(8);
 
+        ui.printVinder(2);
 
     }
 
@@ -70,6 +71,9 @@ public class UI {
 
     }
 
+    /**
+     * @author Malte
+     * @param spillerTur hvis spiller tur skal printes */
     public void printTur(int spillerTur){
         System.out.println(Tekst.spillerTur1()+" "+spillerTur+Tekst.spillerTur2());
     }
@@ -80,15 +84,24 @@ public class UI {
 
     }
 
+    /**
+     * @author Malte
+     * @param feltNr For hvilket felt nummer man gerne vil printe */
     public void printFelt(int feltNr){
+        System.out.println(Tekst.landetPaa());
         System.out.println(Tekst.feltTitel(feltNr));
         System.out.println(Tekst.feltBeskrivelse(feltNr));
-
     }
 
     public void printSpillerPenge(int spillerPenge){}
 
-    public void printVinder(int SpillerNr){}
+    /**
+     * @author Malte
+     * @param SpillerNr Spillerens nummer, der har vundet
+     */
+    public void printVinder(int SpillerNr){
+        System.out.println(Tekst.spillerMedStort()+" "+SpillerNr+" "+Tekst.harVundet2());
+    }
 
     public void farvelPrint(){}
 

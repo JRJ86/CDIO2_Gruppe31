@@ -32,7 +32,7 @@ landetPaa: *Du er landet paa feltet:*
 penge1: *Du har nu*
 penge2: *guldmoenter.*
 farvel: *Tak for spillet - farvel!*
-harVundet2: *har faaet 3000 guldmoenter og vinder spillet!"
+harVundet2: *har faaet 3000 guldmoenter og vinder spillet!*
 spillerMedSmaat: *spiller*
 spillerMedStort: *Spiller*
 slaaMedTerning: *Tast 1 for at slaa med terningen.*
