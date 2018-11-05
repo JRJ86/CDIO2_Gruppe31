@@ -59,7 +59,7 @@ public class Spilfunktioner {
        return getSpillerListe()[spillerNr];
     }
 
-    public void justerSpillerPenge(int spillerId, int pengeJustering) {
+    public static void justerSpillerPenge(int spillerId, int pengeJustering) {
 
             int nyPenge=getSpiller(spillerId).getPenge()+pengeJustering;
             if(nyPenge<0) {nyPenge=0;}
@@ -128,5 +128,7 @@ public class Spilfunktioner {
         int spillerNr = rand.nextInt();
         return getSpillerListe()[spillerNr];
     }
+
+
 
 }

@@ -44,11 +44,13 @@ public class Test_Spilfunktioner {
         System.out.println("Spiller 2 har " + spillerListe[1].getPenge());
 
         int nyPenge = spillerListe[0].getPenge() + pengeJustering;
+        if(nyPenge<0) {nyPenge=0;}
         spillerListe[0].setPenge(nyPenge);
 
         System.out.println("Efter pengejustering har spiller 1: " + spillerListe[0].getPenge());
 
         int nyPenge2 = spillerListe[1].getPenge() + pengeJusteringSP2;
+        if(nyPenge2<0) {nyPenge2=0;}
         spillerListe[1].setPenge(nyPenge2);
 
         System.out.println("Efter pengejustering har spiller 2: " + spillerListe[1].getPenge());
