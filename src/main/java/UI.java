@@ -2,6 +2,8 @@ import Tekst.TekstController;
 
 import java.util.Scanner;
 
+import static Tekst.Tekst.saetSprog;
+
 public class UI {
     Scanner input = new Scanner(System.in);
 
@@ -9,10 +11,10 @@ public class UI {
     public void vaelgSprog(){
         int sprog;
 
-
-        TekstController.getAlleSprog();
-
-
+        System.out.println(saetSprog());
+        for(int i = 0; i<TekstController.getAlleSprog().length;i++){
+            System.out.println(i + " "+TekstController.getAlleSprog()[i]);
+        }
 
         TekstController.setSprog(input.nextInt());
 
