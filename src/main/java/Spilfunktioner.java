@@ -12,7 +12,7 @@ public class Spilfunktioner {
 
         raflebaeger.kast();
 
-        return Raflebaeger.getTerningSum();
+        
         return raflebaeger.getTerningSum();
 
     }
