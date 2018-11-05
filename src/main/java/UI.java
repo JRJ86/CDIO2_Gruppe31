@@ -14,6 +14,8 @@ public class UI {
 
         ui.startSpil();
 
+        ui.printFelt(5);
+
 
     }
 
@@ -78,7 +80,11 @@ public class UI {
 
     }
 
-    public void printFelt(int FeltNr){}
+    public void printFelt(int feltNr){
+        System.out.println(Tekst.feltTitel(feltNr));
+        System.out.println(Tekst.feltBeskrivelse(feltNr));
+
+    }
 
     public void printSpillerPenge(int spillerPenge){}
 
