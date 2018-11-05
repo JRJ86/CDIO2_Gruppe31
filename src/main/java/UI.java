@@ -14,6 +14,7 @@ public class UI {
 
         ui.startSpil();
 
+        ui.farvelPrint();
 
     }
 
@@ -82,7 +83,17 @@ public class UI {
 
     public void printVinder(int SpillerNr){}
 
-    public void farvelPrint(){}
+    /**
+     * @author Filip
+     * Metode der printer et farvel når spillet er slut
+     */
+    public void farvelPrint(){
+
+        System.out.println("----------------------");
+        System.out.println(Tekst.farvel());
+        System.out.println("----------------------");
+
+    }
 
 
 }
