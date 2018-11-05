@@ -17,7 +17,7 @@ public class Spilfunktioner {
 
         raflebaeger.kast();
 
-        
+
         return raflebaeger.getTerningSum();
 
     }
@@ -57,6 +57,17 @@ public class Spilfunktioner {
 
        return getSpillerListe()[spillerNr];
     }
+
+    /**
+     * @author Filip
+     * @param spiller hvilken spiller bliver tjekket
+     * @return returnerer spillerens pengebeholdning
+     */
+    public static int getSpillerPenge(Spiller spiller){
+
+        return spiller.getPenge();
+    }
+
 
     public void justerSpillerPenge(int spillerId, int pengeJustering) {
 
