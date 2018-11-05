@@ -30,7 +30,6 @@ public class Raflebaeger {
     public void kast()
     {
         terningSum = terning1.rul()+terning2.rul();
-
     }
 
     /**@author Jacob
