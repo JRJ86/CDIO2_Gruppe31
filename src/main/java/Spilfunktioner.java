@@ -57,5 +57,4 @@ public class Spilfunktioner {
             int nyPenge=getSpiller(spillerId).getPenge()+pengeJustering;
             getSpiller(spillerId).setPenge(nyPenge);
     }
-
 }
