@@ -8,12 +8,12 @@ import java.util.Random;
 public class Raflebaeger {
 
     //Variabel der beskriver terningesummen af kast med raflebæger
-    private int terningSum;
+    private static int terningSum;
 
 
      //To Variabler der beskriver to terninger.
-    private Terning terning1;
-    private Terning terning2;
+    private static Terning terning1;
+    private static Terning terning2;
 
     /**@author Jacob
      * Raflebaeger konstruktør, som indeholder to Terning objekter.
@@ -35,7 +35,7 @@ public class Raflebaeger {
     /**@author Jacob
      * Metode der returnerer den samlede terning værdi ved rul med raflebaeger
      */
-    public int getTerningSum()
+    public static int getTerningSum()
     {
         return terningSum;
     }

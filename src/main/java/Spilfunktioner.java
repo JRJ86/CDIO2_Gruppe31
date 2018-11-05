@@ -12,6 +12,7 @@ public class Spilfunktioner {
 
         raflebaeger.kast();
 
+        return Raflebaeger.getTerningSum();
         return raflebaeger.getTerningSum();
 
     }
@@ -57,4 +58,6 @@ public class Spilfunktioner {
             int nyPenge=getSpiller(spillerId).getPenge()+pengeJustering;
             getSpiller(spillerId).setPenge(nyPenge);
     }
+
+
 }
