@@ -90,7 +90,9 @@ public class UI {
 
     public void printFelt(int FeltNr){}
 
-    public void printSpillerPenge(int spillerPenge){}
+    public void printSpillerPenge(int spillerPenge){
+        System.out.println(Tekst.penge1()+spillerPenge+Tekst.penge2());
+    }
 
     public void printVinder(int SpillerNr){}
 
