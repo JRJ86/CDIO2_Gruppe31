@@ -25,7 +25,7 @@ spilNavn: *Slaa Et Eventyr*
 velkommen: *Velkommen til*
 spilBeskrivelse: *Slaa med terningen, og se hvilket eventyr det bringer jer paa. Den foerste, der faar 3000 guldmoenter vinder spillet.*
 setSprog: *Hvilket sprog skal spiller være på? Tast nummeret på det sprog du ønsker*
-startSpil: *Start spillet*
+startSpil: *Tast 1 for at starte spillet*
 tur1: *Det er spiller*
 tur2: *'s tur. Tast 1 for at slaa med terningen.*
 landetPaa: *Du er landet paa feltet:*

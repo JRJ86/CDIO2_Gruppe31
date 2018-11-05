@@ -1,3 +1,5 @@
+import Tekst.Tekst;
+
 import Tekst.TekstController;
 
 import java.util.Scanner;
@@ -22,7 +24,40 @@ public class UI {
 
     public void printIntro(){}
 
-    public void startSpil(){}
+    /**
+     * @author Filip
+     * Metode der beder spilleren om at taste 1 for at starte spillet
+     * og fortsætter indtil spilleren angiver det rigtige input
+     */
+    public void startSpil(){
+
+        while (true){
+
+            System.out.println(Tekst.startSpil());
+
+            int tal = input.nextInt();
+
+            if (tal > 1){
+
+                System.out.println("Forkert input, prøv igen");
+
+            }
+
+            if (tal < 1){
+
+                System.out.println("Forkert input, prøv igen");
+
+            }
+
+            else if (tal == 1){
+
+                break;
+
+            }
+
+        }
+
+    }
 
     public void printTur(int spillerTur){}
 
