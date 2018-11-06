@@ -60,8 +60,6 @@ public class Spilfunktioner {
     }
 
 
-    public static void justerSpillerPenge(int spillerId, int pengeJustering) {
-
     /**
      * @author Filip
      * @param spiller hvilken spiller bliver tjekket
