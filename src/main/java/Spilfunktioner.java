@@ -71,7 +71,7 @@ public class Spilfunktioner {
     }
 
 
-    public void justerSpillerPenge(int spillerId, int pengeJustering) {
+    public static void justerSpillerPenge(int spillerId, int pengeJustering) {
 
 
             int nyPenge=getSpiller(spillerId).getPenge()+pengeJustering;
