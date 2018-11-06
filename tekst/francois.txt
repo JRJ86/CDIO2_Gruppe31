@@ -1,3 +1,39 @@
 sprog: *Francois*
+taarnetTitel: *Tour*
+taarnetBeskrivelse: *Vous pouvez répondre à la démarche du dragon et avoir le trésor de la victoire - vous avez reçu 250 moulins à or!*
+kraterTitel: *Crater*
+kraterBeskrivelse: *Vous avez perdu 100 moulins à or dans un cratère - sympa.*
+paladsetTitel: *Palais*
+paladsetBeskrivelse: *Vous avez ramené la princesse à la maison et reçu 100 moulins à or en récompense - naerrigroeve.*
+koldOerkenTitel: *Désert Froid*
+koldOerkenBeskrivelse: *Vous vous êtes retrouvé dans le froid, et êtes obligé d'acheter des orteils plus chauds pour 20 orfèvres.*
+muretByTitel: *Ville de Muret*
+muretByBeskrivelse: *Vous aidez la ville à réparer le mur - et ne tuez que quelques orcs - et recevez 180 moulins à or.*
+klosterTitel: *Monastère*
+klosterBeskrivelse: *Vous avez bu plein de moines - vous avez gagné un repas mais dépensé tout votre argent dans la boue.*
+moerkGrotteTitel: *Grotte Noire*
+moerkGrotteBeskrivelse: *Vous avez oublié un sac de 70 moulins à or dans une grotte Moerk - vous ne les retrouverez plus.*
+bjergHytterTitel: *Refuges*
+bjergHytterBeskrivelse: *Vous avez trouvé 60 orfèvres dans une cabane de montagne - vous voudrez peut-être voir un sillage si vous voulez les garder.*
+varulveMurenTitel: *Murs loups-garous*
+varulveMurenBeskrivelse: *Vous avez traversé le mur du mur et vous devez leur donner 60 moulins à l’or car ils ne vous ont pas mangé. Disponible, vous ne pouvez pas dormir, vous pouvez donc frapper à nouveau.*
+hulletTitel: *Trou*
+hulletBeskrivelse: *Vous avez jeté 50 moulins d'or dans un trou parce que vous pensiez que c'était un pont qui souhaitait.*
 guldMineTitel: *Mine d'or*
-guldMineBeskrivelse: *Vous l'avez trouvé dans les montagnes et l'avez vendu à 650, vous êtes riche!*
+guldMineBeskrivelse: *Vous avez trouvé de l'or dans les montagnes et l'avez fondu à 650 moulins à or - vous êtes riche!*
+spilNavn: *Battre une aventure*
+velkommen: *Bienvenue à*
+spilBeskrivelse: *Battez les dés et voyez quelle aventure cela vous apporte. Le premier à obtenir 3 000 pièces d'or remporte la partie. *
+setSprog: *Quelle langue devrait être le lecteur? Entrez le numéro de la langue que vous voulez*
+startSpil: *Entrez 1 pour commencer le jeu*
+tur1: *C'est le joueur*
+tur2: * tour.*
+landetPaa: *Vous êtes débarqué dans le champ: *
+penge1: *Vous avez maintenant*
+penge2: *orfèvres.*
+farvel: *Merci pour le jeu - au revoir!*
+harVundet2: *obtenu 3 000 orfèvres et gagne le jeu!*
+spillerMedSmaat: *player*
+spillerMedStort: *Player*
+slaaMedTerning: *Appuyez sur 1 pour atteindre le cube.*
+printTerning: *Vous avez frappé*
