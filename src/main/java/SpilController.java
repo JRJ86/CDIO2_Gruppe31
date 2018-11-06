@@ -9,9 +9,10 @@ public class SpilController {
 
     static void koerSpil(){
 
-        // Setup Spil
+        setup();
 
-        // Start Spil
+        UI ui = new UI();
+        ui.startSpil();
 
         // Kør tur
 
@@ -34,13 +35,13 @@ public class SpilController {
 
 
     static void setup(){
-        // Indstil Sprog
+        UI ui = new UI();
+        ui.vaelgSprog();
+        ui.printIntro();
 
-        // Print spil intro
+        Spilfunktioner.lavfelter();
 
-        // Lav felter
-
-        // Lav spillere
+        Spilfunktioner.lavSpillere(2);
     }
 
 }
