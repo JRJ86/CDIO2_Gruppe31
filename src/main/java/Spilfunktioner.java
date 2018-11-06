@@ -71,12 +71,12 @@ public class Spilfunktioner {
     }
 
 
-    public static void justerSpillerPenge(int spillerId, int pengeJustering) {
+    public static void justerSpillerPenge(Spiller spiller, int pengeJustering) {
 
 
-            int nyPenge=getSpiller(spillerId).getPenge()+pengeJustering;
+            int nyPenge=spiller.getPenge()+pengeJustering;
             if(nyPenge<0) {nyPenge=0;}
-            getSpiller(spillerId).setPenge(nyPenge);
+            spiller.setPenge(nyPenge);
     }
 
     /**
