@@ -1,3 +1,62 @@
 sprog: *English*
+TaarnetTitel: *Tower*
+TaarnetBeskrivelse: *You were able to answer the dragons riddle, and won its treasure - you've received 250 goldcoins!*
+kraterTitel: *Crater*
+kraterBeskrivelse: *You have lost 100 goldcoins in a crater! -GREAT*
+paladsetTitel: *Palace*
+paladsetBeskrivelse: *You have brought the princess back to the palace. For this heroic act you'll receive 100 goldcoins - cheapskates.*
+koldOerkenTitel: *Cold desert*
+koldOerkenBeskrivelse: *You find yourself in a cold, cold desert. You have to buy some warm cloths for 20 goldcoins.*
+muretByTitel: *Walled city*
+muretByBeskrivelse: *You have helped the city by reparing the walls - simultaneously you are killing some orcs - and you receive 180 goldcoins.*
+klosterTitel: *Monastery*
+klosterBeskrivelse: *You drank with the monks - you won a bet but used all your goldcoins on booze.*
+moerkGrotteTitel: *Dark Cave*
+moerkGrotteBeskrivelse: *You forgot a bag of 70 goldcoins - you'll probably not find them again.*
+bjergHytterTitel: *Mountain hut*
+bjergHytterBeskrivelse: *You found 60 goldcoins in a hut far away in the misty mountains - you better get the heck out of there if you want to keep them.*
+varulveMurenTitel: *Werewall*
+varulveMurenBeskrivelse: *You have traversed the werewall and had to give them 60 goldcoins if you did'nt want them to eat you. On the other hand you can't sleep, so you can toss again.*
+hulletTitel: *The pit*
+hulletBeskrivelse: *You threw 50 goldcoins into the pit, because you thought it was a wish-granting well... fool.*
 guldMineTitel: *Goldmine*
 guldMineBeskrivelse: *You found gold in the mountains and sell it for 650, you're rich!*
+spilNavn: *Die in adventure*
+velkommen: *Welcome to*
+spilBeskrivelse: *Hit the dice and see what adventure it brings to you. The first to win 3000 goldsmiths wins the game.*
+setSprog: *Which language should player be on? Enter the number of the language you want*
+startSpil: *Press 1 to start the game*
+tur1: *It's player*
+tur2: *'s turn.*
+landetPaa: *You are landed in the field:*
+penge1: *You, now have*
+penge2: *goldcoins.*
+farvel: *Thanks for the game - bye!*
+harVundet2: *has got 3,000 goldcoins and wins the game!"
+spillerMedSmaat: *player*
+spillerMedStort: *Player*
+slaaMedTerning: *Press 1 to hit the dice.*
+printTerning: *You have hit*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+spilBeskrivelse: *What language do you wish my lord?*
