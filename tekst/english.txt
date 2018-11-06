@@ -37,6 +37,7 @@ spillerMedSmaat: *player*
 spillerMedStort: *Player*
 slaaMedTerning: *Press 1 to hit the dice.*
 printTerning: *You have hit*
+wrongInput: *Wrong input, please try again!*
 
 
 

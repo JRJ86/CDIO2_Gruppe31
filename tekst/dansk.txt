@@ -37,3 +37,4 @@ spillerMedSmaat: *spiller*
 spillerMedStort: *Spiller*
 slaaMedTerning: *Tast 1 for at slaa med terningen.*
 printTerning: *Du har slaaet *
+forkertIndput: *Forkert input, prøv igen!*

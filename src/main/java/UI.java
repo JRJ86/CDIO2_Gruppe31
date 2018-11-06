@@ -27,7 +27,7 @@ public class UI {
                 break;
             }
             else{
-                System.out.println("Forkert input, prøv igen");
+                System.out.println(Tekst.forkertInput());
             }
         }
 
