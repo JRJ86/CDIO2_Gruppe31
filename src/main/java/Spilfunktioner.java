@@ -135,9 +135,7 @@ public class Spilfunktioner {
 
         }
         public static int getVaerdi(int feltnummer){
-            lavfelter();
             return felter[feltnummer].getVaerdi();
-
         }
 
     public static Spiller getRandomSpiller() {
