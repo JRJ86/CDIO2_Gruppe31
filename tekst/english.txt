@@ -21,22 +21,22 @@ hulletTitel: *The pit*
 hulletBeskrivelse: *You threw 50 goldcoins into the pit, because you thought it was a wish-granting well... fool.*
 guldMineTitel: *Goldmine*
 guldMineBeskrivelse: *You found gold in the mountains and sell it for 650, you're rich!*
-spilNavn: *Slaa Et Eventyr*
-velkommen: *Velkommen til*
-spilBeskrivelse: *Slaa med terningen, og se hvilket eventyr det bringer jer paa. Den foerste, der faar 3000 guldmoenter vinder spillet.*
-setSprog: *Hvilket sprog skal spiller være på? Tast nummeret på det sprog du ønsker*
-startSpil: *Tast 1 for at starte spillet*
-tur1: *Det er spiller*
-tur2: *'s tur.*
-landetPaa: *Du er landet paa feltet:*
-penge1: *Du har nu*
-penge2: *guldmoenter.*
-farvel: *Tak for spillet - farvel!*
-harVundet2: *har faaet 3000 guldmoenter og vinder spillet!"
-spillerMedSmaat: *spiller*
-spillerMedStort: *Spiller*
-slaaMedTerning: *Tast 1 for at slaa med terningen.*
-printTerning: *Du har slaaet *
+spilNavn: *Die in adventure*
+velkommen: *Welcome to*
+spilBeskrivelse: *Hit the dice and see what adventure it brings to you. The first to win 3000 goldsmiths wins the game.*
+setSprog: *Which language should player be on? Enter the number of the language you want*
+startSpil: *Press 1 to start the game*
+tur1: *It's player*
+tur2: *'s turn.*
+landetPaa: *You are landed in the field:*
+penge1: *You, now have*
+penge2: *goldcoins.*
+farvel: *Thanks for the game - bye!*
+harVundet2: *has got 3,000 goldcoins and wins the game!"
+spillerMedSmaat: *player*
+spillerMedStort: *Player*
+slaaMedTerning: *Press 1 to hit the dice.*
+printTerning: *You have hit*
 
 
 
