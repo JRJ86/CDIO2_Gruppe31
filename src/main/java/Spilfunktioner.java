@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.Random;
 
 public class Spilfunktioner {
 
@@ -58,6 +59,9 @@ public class Spilfunktioner {
        return getSpillerListe()[spillerNr];
     }
 
+
+    public static void justerSpillerPenge(int spillerId, int pengeJustering) {
+
     /**
      * @author Filip
      * @param spiller hvilken spiller bliver tjekket
@@ -71,7 +75,9 @@ public class Spilfunktioner {
 
     public void justerSpillerPenge(int spillerId, int pengeJustering) {
 
+
             int nyPenge=getSpiller(spillerId).getPenge()+pengeJustering;
+            if(nyPenge<0) {nyPenge=0;}
             getSpiller(spillerId).setPenge(nyPenge);
     }
 
@@ -135,5 +141,14 @@ public class Spilfunktioner {
             return felter[feltnummer].getVaerdi();
 
         }
+
+    public static Spiller getRandomSpiller() {
+        Random rand = new Random(2);
+
+        int spillerNr = rand.nextInt();
+        return getSpillerListe()[spillerNr];
+    }
+
+
 
 }
