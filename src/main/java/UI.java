@@ -27,7 +27,7 @@ public class UI {
                 break;
             }
             else{
-                System.out.println("Forkert input, prøv igen");
+                System.out.println(Tekst.forkertInput());
             }
         }
 
@@ -90,7 +90,7 @@ public class UI {
      * @author Malte
      * @param spillerTur hvis spiller tur skal printes */
     public void printTur(int spillerTur){
-        System.out.println(Tekst.spillerTur1()+" "+spillerTur+Tekst.spillerTur2());
+        System.out.println(Tekst.spillerTur1()+" "+spillerTur+" "+Tekst.spillerTur2());
     }
 
     /**
@@ -115,7 +115,7 @@ public class UI {
 
 
     public void printTerning(int terningVerdi){
-        System.out.println(Tekst.printTerning()+terningVerdi);
+        System.out.println(Tekst.printTerning()+" "+terningVerdi);
     }
 
     /**
@@ -128,7 +128,7 @@ public class UI {
     }
 
     public void printSpillerPenge(int spillerPenge){
-        System.out.println(Tekst.penge1()+spillerPenge+Tekst.penge2());
+        System.out.println(Tekst.penge1()+" "+spillerPenge+" "+Tekst.penge2());
     }
 
     /**

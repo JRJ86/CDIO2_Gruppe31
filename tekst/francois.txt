@@ -37,3 +37,4 @@ spillerMedSmaat: *player*
 spillerMedStort: *Player*
 slaaMedTerning: *Appuyez sur 1 pour atteindre le cube.*
 printTerning: *Vous avez frappé*
+forkertIndput: *Entrée incorrecte, réessayez!*

@@ -1,5 +1,9 @@
 package Tekst;
 
+/**
+ * @author Malte og Filip
+ */
+
 public class Tekst {
 
     public static String sprogNavn(){ return TekstController.getTekst(0);}
@@ -24,5 +28,6 @@ public class Tekst {
     public static String spillerMedStort(){return TekstController.getTekst(36);}
     public static String slaaMedTerning(){return TekstController.getTekst(37);}
     public static String printTerning(){return TekstController.getTekst(38);}
+    public static String forkertInput () {return TekstController.getTekst(39);}
 
 }

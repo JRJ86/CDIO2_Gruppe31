@@ -55,9 +55,15 @@ public class SpilController {
         ui.vaelgSprog();
         ui.printIntro();
 
+ lavController
         Spilfunktioner.lavfelter();
 
         Spilfunktioner.lavSpillere(2);
+
+        // Lav felter
+
+        // Lav spillere
+ development
     }
 
 }
