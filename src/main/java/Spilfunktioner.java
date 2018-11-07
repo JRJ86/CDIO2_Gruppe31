@@ -168,9 +168,9 @@ public class Spilfunktioner {
      */
 
         public static Spiller getRandomSpiller() {
-        Random rand = new Random(2);
+        Random rand = new Random();
 
-        int spillerNr = rand.nextInt();
+        int spillerNr = rand.nextInt(spillerListe.length);
         return getSpillerListe()[spillerNr];
     }
 

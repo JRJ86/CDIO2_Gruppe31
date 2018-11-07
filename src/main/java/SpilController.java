@@ -13,7 +13,7 @@ public class SpilController {
 
 
         setup();
-        spillerTur = Spilfunktioner.getSpillerListe()[0];
+        spillerTur = Spilfunktioner.getRandomSpiller();
         ui.startSpil();
 
         do {
