@@ -1,6 +1,7 @@
 public class SpilController {
-
+    Spiller spillerTur;
     UI ui = new UI();
+
     public static void main(String[] args) {
         SpilController spilController = new SpilController();
 
@@ -9,17 +10,20 @@ public class SpilController {
 
     void koerSpil(){
 
-        setup();
 
+
+        setup();
+        spillerTur = Spilfunktioner.getSpillerListe()[0];
         ui.startSpil();
 
         do {
-            spillerTur(Spilfunktioner.getSpiller(1));
+            spillerTur(spillerTur);
+            skiftTur();
         }
-        while (!Spilfunktioner.harSpillerVundet(Spilfunktioner.getSpiller(1)));
+        while (!Spilfunktioner.harSpillerVundet(spillerTur));
 
 
-        ui.printVinder(1);
+        ui.printVinder(spillerTur.getId());
         // Print vinder
 
         ui.farvelPrint();
@@ -27,6 +31,25 @@ public class SpilController {
 
     }
 
+    /**
+     * @author Andreas og Filip
+     * Metode der skifter tur mellem spillerne
+     */
+
+    void skiftTur(){
+
+
+        for (int i = 0; i < Spilfunktioner.getSpillerListe().length; i++){
+
+           Spiller nySpiller = Spilfunktioner.getSpillerListe()[i];
+
+            if (spillerTur != nySpiller){
+                 spillerTur = nySpiller;
+                 break;
+            }
+        }
+
+    }
 
     void spillerTur(Spiller spiller){
 
@@ -55,7 +78,7 @@ public class SpilController {
         ui.vaelgSprog();
         ui.printIntro();
 
- lavController
+
         Spilfunktioner.lavfelter();
 
         Spilfunktioner.lavSpillere(2);
@@ -63,7 +86,9 @@ public class SpilController {
         // Lav felter
 
         // Lav spillere
- development
+
     }
+
+
 
 }
