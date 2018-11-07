@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CDIO2_Gruppe31" target="1.7" />
-      <module name="terningespil-cdio2" target="1.5" />
+      <module name="terningespil-cdio2" target="7" />
     </bytecodeTargetLevel>
   </component>
 </project>

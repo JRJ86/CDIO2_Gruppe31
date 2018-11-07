@@ -2,10 +2,30 @@ import Tekst.Tekst;
 
 import Tekst.TekstController;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class UI {
     Scanner input = new Scanner(System.in);
+
+
+    /**
+     * @author Abhishek-Kashyap (Stackoverflow.com)
+     * https://stackoverflow.com/questions/2979383/java-clear-the-console
+     *
+     * En metode der rydder konsollen. Er kun dokumenteret til at fungere på Windows.
+     * Hvis den laver en fejl, er der indsat en try catch statement, så programmet ikke
+     * crasher.
+     */
+    public void rydKonsol(){
+        //Clears Screen in java
+        try {
+            if (System.getProperty("os.name").contains("Windows"))
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+            else
+                Runtime.getRuntime().exec("clear");
+        } catch (IOException | InterruptedException ex) {}
+    }
 
 
     public void vaelgSprog(){
