@@ -1,17 +1,25 @@
+/**
+ * Klassen der styrer hele spillet, og bestemmer hvilke ting der sker hvornår.
+ * Den laver ikke selv nogen beregninger (på nær at skifte tur mellem spillere), men
+ * er den, der forbinder metoder fra UI og Spilfunktioner.
+ */
 public class SpilController {
-    Spiller spillerTur;
-    UI ui = new UI();
 
+    private Spiller spillerTur;
+    private UI ui = new UI();
+
+    /** Sætter spillet i gang */
     public static void main(String[] args) {
         SpilController spilController = new SpilController();
-
         spilController.koerSpil();
     }
 
-    void koerSpil(){
 
-
-
+    /**
+     * Mian loopet i spillet, der styrer hvor langt spillet er, og hvis tur det er.
+     * Det er her spillet bliver startet fra, og sluttet igen.
+     */
+    private void koerSpil(){
         setup();
         spillerTur = Spilfunktioner.getSpillerListe()[0];
         ui.startSpil();
@@ -22,22 +30,17 @@ public class SpilController {
         }
         while (!Spilfunktioner.harSpillerVundet(spillerTur));
 
-
         ui.printVinder(spillerTur.getId());
-        // Print vinder
 
         ui.farvelPrint();
-        // Slut Spil
-
     }
+
 
     /**
      * @author Andreas og Filip
      * Metode der skifter tur mellem spillerne
      */
-
-    void skiftTur(){
-
+    private void skiftTur(){
 
         for (int i = 0; i < Spilfunktioner.getSpillerListe().length; i++){
 
@@ -48,10 +51,15 @@ public class SpilController {
                  break;
             }
         }
-
     }
 
-    void spillerTur(Spiller spiller){
+
+    /**
+     * @author Chua
+     * Kører en tur for en vilkårlig spiller, herunder slår med terninger, lander på felt og justerer scorer.
+     * @param spiller Hvilken spiller turen skal køre for
+     */
+    private void spillerTur(Spiller spiller){
 
         ui.printTur(spiller.getId());
 
@@ -70,25 +78,24 @@ public class SpilController {
         Spilfunktioner.justerSpillerPenge(spiller , point);
 
         ui.printSpillerPenge(Spilfunktioner.getSpillerPenge(spiller));
-
     }
 
 
-    void setup(){
-        ui.vaelgSprog();
-        ui.printIntro();
+    /**
+     * @author Chua
+     * Laver start setup for spillet, hvor der bliver indstillet kørt vaelgsprog funktion i UI,
+     * samt der bliver lavet spillere og felter.
+     */
+    private void setup(){
 
+        ui.vaelgSprog();
+
+        ui.printIntro();
 
         Spilfunktioner.lavfelter();
 
         Spilfunktioner.lavSpillere(2);
 
-        // Lav felter
-
-        // Lav spillere
-
     }
-
-
 
 }
