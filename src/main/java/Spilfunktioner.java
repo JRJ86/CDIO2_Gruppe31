@@ -71,12 +71,12 @@ public class Spilfunktioner {
     }
 
 
-    public void justerSpillerPenge(int spillerId, int pengeJustering) {
+    public static void justerSpillerPenge(Spiller spiller, int pengeJustering) {
 
 
-            int nyPenge=getSpiller(spillerId).getPenge()+pengeJustering;
+            int nyPenge=spiller.getPenge()+pengeJustering;
             if(nyPenge<0) {nyPenge=0;}
-            getSpiller(spillerId).setPenge(nyPenge);
+            spiller.setPenge(nyPenge);
     }
 
     /**
@@ -135,9 +135,7 @@ public class Spilfunktioner {
 
         }
         public static int getVaerdi(int feltnummer){
-            lavfelter();
             return felter[feltnummer].getVaerdi();
-
         }
 
     public static Spiller getRandomSpiller() {

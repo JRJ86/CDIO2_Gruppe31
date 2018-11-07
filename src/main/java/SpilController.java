@@ -1,46 +1,69 @@
 public class SpilController {
 
-
+    UI ui = new UI();
     public static void main(String[] args) {
         SpilController spilController = new SpilController();
 
         spilController.koerSpil();
     }
 
-    static void koerSpil(){
+    void koerSpil(){
 
-        // Setup Spil
+        setup();
 
-        // Start Spil
+        ui.startSpil();
 
-        // Kør tur
+        do {
+            spillerTur(Spilfunktioner.getSpiller(1));
+        }
+        while (!Spilfunktioner.harSpillerVundet(Spilfunktioner.getSpiller(1)));
 
-        // For vinder
 
+        ui.printVinder(1);
         // Print vinder
 
+        ui.farvelPrint();
         // Slut Spil
 
     }
 
 
-    static void spillerTur(Spiller spiller){
+    void spillerTur(Spiller spiller){
 
-        // Sla raflebæger (slaa og print)
-        // land på felt
-        // Juster spiller penge
+        ui.printTur(spiller.getId());
+
+        ui.printSpillerPenge(Spilfunktioner.getSpillerPenge(spiller));
+
+        ui.slåRaflebaeger();
+
+        int feltnummer = Spilfunktioner.rafleKast();
+
+        ui.printTerning(feltnummer);
+
+        int point = Spilfunktioner.getVaerdi(feltnummer-2); //feltnummer listen går fra 0 til 10, men terningeslagene går fra 2 til 12, derfor -2
+
+        ui.printFelt(feltnummer);
+
+        Spilfunktioner.justerSpillerPenge(spiller , point);
+
+        ui.printSpillerPenge(Spilfunktioner.getSpillerPenge(spiller));
 
     }
 
 
-    static void setup(){
-        // Indstil Sprog
+    void setup(){
+        ui.vaelgSprog();
+        ui.printIntro();
 
-        // Print spil intro
+ lavController
+        Spilfunktioner.lavfelter();
+
+        Spilfunktioner.lavSpillere(2);
 
         // Lav felter
--
+
         // Lav spillere
+ development
     }
 
 }
