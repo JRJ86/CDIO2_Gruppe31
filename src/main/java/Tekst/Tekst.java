@@ -1,5 +1,9 @@
 package Tekst;
 
+/**
+ * @author Malte og Filip
+ */
+
 public class Tekst {
 
     public static String sprogNavn(){ return TekstController.getTekst(0);}
