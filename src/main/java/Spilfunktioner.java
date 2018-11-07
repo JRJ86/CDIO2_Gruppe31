@@ -50,10 +50,20 @@ public class Spilfunktioner {
         }
     }
 
+    /**
+     * @author Andreas
+     * getter for spillerklassen der bliver lavet af metoden lavSpillere
+     * @return
+     */
     public static Spiller[] getSpillerListe(){
         return spillerListe;
     }
 
+    /**
+     * @auther Andreas
+     * @param spillerNr
+     * @return Spiller objekt.
+     */
     public static Spiller getSpiller(int spillerNr){
 
        return getSpillerListe()[spillerNr];
@@ -70,7 +80,12 @@ public class Spilfunktioner {
         return spiller.getPenge();
     }
 
-
+    /**
+     * @auther Andreas
+     * jestere en spillers pengebeholdning i forhold til et felts værdi.
+     * @param spiller
+     * @param pengeJustering
+     */
     public static void justerSpillerPenge(Spiller spiller, int pengeJustering) {
 
 
@@ -134,11 +149,25 @@ public class Spilfunktioner {
             //Lavet en liste af objekter fra med index 0 til 11, som indeholder objekterne "Felt" fra 2 til 12
 
         }
-        public static int getVaerdi(int feltnummer){
+
+    /**
+     * @auther Jacob Chua
+     * @param feltnummer
+     * @return den værdi som er tildelt et felt.
+     */
+
+    public static int getVaerdi(int feltnummer){
             return felter[feltnummer].getVaerdi();
         }
 
-    public static Spiller getRandomSpiller() {
+
+    /**
+     * @auther Andreas
+     * vælger en random spiller fra spillerlisten.
+     * @return
+     */
+
+        public static Spiller getRandomSpiller() {
         Random rand = new Random(2);
 
         int spillerNr = rand.nextInt();
