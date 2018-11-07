@@ -9,12 +9,15 @@ public class SpilController {
 
     void koerSpil(){
 
+
+
         setup();
 
         ui.startSpil();
 
         do {
             spillerTur(Spilfunktioner.getSpiller(1));
+
         }
         while (!Spilfunktioner.harSpillerVundet(Spilfunktioner.getSpiller(1)));
 
@@ -27,6 +30,20 @@ public class SpilController {
 
     }
 
+    void turTilSpil(){
+
+        Spiller spillerNr = ;
+
+        for (int i = 0; i < Spilfunktioner.getSpillerListe().length; i++){
+
+           Spiller nySpiller = Spilfunktioner.getSpillerListe()[i];
+
+            if (spillerNr != nySpiller)
+        }
+
+
+
+    }
 
     void spillerTur(Spiller spiller){
 
@@ -55,7 +72,7 @@ public class SpilController {
         ui.vaelgSprog();
         ui.printIntro();
 
- lavController
+
         Spilfunktioner.lavfelter();
 
         Spilfunktioner.lavSpillere(2);
@@ -63,7 +80,7 @@ public class SpilController {
         // Lav felter
 
         // Lav spillere
- development
+
     }
 
 }
