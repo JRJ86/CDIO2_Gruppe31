@@ -29,12 +29,12 @@ public class UI {
 
 
     public void vaelgSprog(){
-        int sprog;
 
+        rydKonsol();
         System.out.println(Tekst.saetSprog());
         int antalSprog = TekstController.getAlleSprog().length;
         for(int i = 0; i<antalSprog;i++){
-            System.out.println(i + " "+TekstController.getAlleSprog()[i]);
+            System.out.println("\t"+(i+1) + ") "+TekstController.getAlleSprog()[i]);
         }
 
         int tal = 0;
@@ -43,7 +43,7 @@ public class UI {
 
             tal = input.nextInt();
 
-            if (tal >= 0 && tal <antalSprog){
+            if (tal >= 1 && tal <antalSprog+1){
                 break;
             }
             else{
@@ -51,7 +51,7 @@ public class UI {
             }
         }
 
-        TekstController.setSprog(tal);
+        TekstController.setSprog(tal-1);
 
     }
 
@@ -62,9 +62,11 @@ public class UI {
      */
     public void printIntro(){
 
+        rydKonsol();
+
         System.out.println("----------------------");
         System.out.println(Tekst.velkommen());
-        System.out.println(Tekst.spilNavn());
+        System.out.println("'"+Tekst.spilNavn()+"'");
         System.out.println("----------------------");
         System.out.println(Tekst.spilBeskrivelse());
         System.out.println("----------------------");
@@ -101,24 +103,28 @@ public class UI {
                 break;
 
             }
-
         }
+        rydKonsol();
 
     }
+
 
     /**
      * @author Malte
      * @param spillerTur hvis spiller tur skal printes */
     public void printTur(int spillerTur){
-        System.out.println(Tekst.spillerTur1()+" "+spillerTur+" "+Tekst.spillerTur2());
+        System.out.println("\n" +
+                            "\n"+Tekst.spillerTur1()+" "+spillerTur+" "+Tekst.spillerTur2());
     }
+
 
     /**
      * @author Andreas & Malte
      */
     public void slåRaflebaeger(){
 
-        System.out.println(Tekst.slaaMedTerning());
+        System.out.println("\n" +
+                            Tekst.slaaMedTerning());
 
         while (true){
 
@@ -142,13 +148,16 @@ public class UI {
      * @author Malte
      * @param feltNr For hvilket felt nummer man gerne vil printe */
     public void printFelt(int feltNr){
-        System.out.println(Tekst.landetPaa());
+
+        System.out.println("\n" +
+                            Tekst.landetPaa());
         System.out.println(Tekst.feltTitel(feltNr));
         System.out.println(Tekst.feltBeskrivelse(feltNr));
     }
 
     public void printSpillerPenge(int spillerPenge){
-        System.out.println(Tekst.penge1()+" "+spillerPenge+" "+Tekst.penge2());
+        System.out.println("\n" +
+                            Tekst.penge1()+" "+spillerPenge+" "+Tekst.penge2());
     }
 
     /**
@@ -156,7 +165,9 @@ public class UI {
      * @param SpillerNr Spillerens nummer, der har vundet
      */
     public void printVinder(int SpillerNr){
-        System.out.println(Tekst.spillerMedStort()+" "+SpillerNr+" "+Tekst.harVundet2());
+        System.out.println("\n" +
+                            "\n" +
+                            Tekst.spillerMedStort()+" "+SpillerNr+" "+Tekst.harVundet2());
     }
 
     /**
@@ -165,7 +176,8 @@ public class UI {
      */
     public void farvelPrint(){
 
-        System.out.println("----------------------");
+        System.out.println("\n" +
+                            "----------------------");
         System.out.println(Tekst.farvel());
         System.out.println("----------------------");
 
