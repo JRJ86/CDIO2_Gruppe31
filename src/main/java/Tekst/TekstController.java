@@ -1,12 +1,6 @@
 package Tekst;
 
 import java.io.*;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.security.CodeSource;
-import java.util.Scanner;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipInputStream;
 
 /** @author Malte
  * Indeholder metoder til at håndtere sprog,
@@ -14,43 +8,9 @@ import java.util.zip.ZipInputStream;
  */
 public class TekstController {
 
-    /* Stien til folderen \sprog inde i programmet. Den sørger
-        desuden for at hente den i programmets mappe uanset,
-        hvorhenne programmet ligger på computeren. */
-    private static String sprogfolder;
-
-
     /*  Indstillingen der styrer hvilket sprog teksterne printes på
         Den henviser til en specifik sprogfil. */
     private static File nuvaerendeSprogFil = null;
-
-
-    private static void getFiles(){
-
-        try {
-            CodeSource src = TekstController.class.getProtectionDomain().getCodeSource();
-            if (src != null) {
-                URL jar = src.getLocation();
-                ZipInputStream zip = new ZipInputStream(jar.openStream());
-                while (true) {
-                    ZipEntry e = zip.getNextEntry();
-                    if (e == null)
-                        break;
-
-                    String name = e.getName();
-                    if (name.startsWith("sprog/")) {
-                        System.out.println(name);
-
-                    }
-                }
-            }
-        }catch(IOException e){
-            System.out.println("getFiles() failed");
-        }
-
-    }
-
-
 
 
     /**
