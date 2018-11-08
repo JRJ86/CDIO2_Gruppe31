@@ -46,7 +46,7 @@ public class Spilfunktioner {
         spillerListe = new Spiller[antalSpillere];
         for(int i=0;i<antalSpillere;i++) {
             spillerListe[i] = new Spiller();
-            spillerListe[i].setId(i);
+            spillerListe[i].setId(i+1);
         }
     }
 
