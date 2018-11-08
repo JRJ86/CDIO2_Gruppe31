@@ -137,7 +137,10 @@ public class UI {
         }
     }
 
-
+    /**
+     * @author Malte
+     * @param terningVerdi Værdien af terningernes øjne
+     */
     public void printTerning(int terningVerdi){
         System.out.println(Tekst.printTerning()+" "+terningVerdi);
     }
