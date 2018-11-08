@@ -1,3 +1,40 @@
 sprog: *Dansk*
+taarnetTitel: *Taarnet*
+taarnetBeskrivelse: *Du kunne svare paa dragens gaade, og har vundets dens skat - du har fået 250 guldmoenter!*
+kraterTitel: *Krater*
+kraterBeskrivelse: *Du har tabt 100 guldmoenter i et krater - flot.*
+paladsetTitel: *Paladset*
+paladsetBeskrivelse: *Du bragte prinsessen hjem til paladset, og faaet 100 guldmoenter som beloenning - naerrigroeve.*
+koldOerkenTitel: *Kold Oerken*
+koldOerkenBeskrivelse: *Du er havnet i den kolde oerken, og bliver noedt til at koebe noget varmere toej for 20 guldmoenter.*
+muretByTitel: *Muret By*
+muretByBeskrivelse: *Du hjaelper byen med at reparerer muren - og slaar lige nogle orker ihjel - og bliver beloennet med 180 guldmoenter.*
+klosterTitel: *Kloster*
+klosterBeskrivelse: *Du drak dig fuld med munkene - du vandt i et vaeddemaal men brugte alle pengene paa mjoed.*
+moerkGrotteTitel: *Moerk Grotte*
+moerkGrotteBeskrivelse: *Du glemte et pose med 70 guldmoenter i en moerk grotte - dem finder du nok ikke igen.*
+bjergHytterTitel: *Bjerg Hytter*
+bjergHytterBeskrivelse: *Du fandt 60 guldmoenter i en hytte i bjergene - du maa nok hellere se at komme vaek hvis du vil beholde dem.*
+varulveMurenTitel: *Vareulve Muren*
+varulveMurenBeskrivelse: *Du kom til at krydse Vareulvemuren og maatte give dem 60 guldmoenter for at de ikke spiste dig. Tilgengaeld kan du ikke sove, saa du kan slaa igen.*
+hulletTitel: *Hullet*
+hulletBeskrivelse: *Du smed 50 guldmoenter i et hul, fordi du troede det var en oenskebroen.*
 guldMineTitel: *Guldmine*
-guldMineBeskrivelse: *Du har fundet guld i bjergene og har fundet saelger det for 650, du er rig!*
+guldMineBeskrivelse: *Du har fundet guld i bjergene, og smelter det om til 650 guldmoenter - du er rig!*
+spilNavn: *Slaa Et Eventyr*
+velkommen: *Velkommen til*
+spilBeskrivelse: *Slaa med terningen, og se hvilket eventyr det bringer jer paa. Den foerste, der faar 3000 guldmoenter vinder spillet.*
+setSprog: *Hvilket sprog skal spiller være på? Tast nummeret på det sprog du ønsker*
+startSpil: *Tast 1 for at starte spillet*
+tur1: *Det er spiller*
+tur2: *'s tur.*
+landetPaa: *Du er landet paa feltet:*
+penge1: *Du har nu*
+penge2: *guldmoenter.*
+farvel: *Tak for spillet - farvel!*
+harVundet2: *har faaet 3000 guldmoenter og vinder spillet!*
+spillerMedSmaat: *spiller*
+spillerMedStort: *Spiller*
+slaaMedTerning: *Tast 1 for at slaa med terningen.*
+printTerning: *Du har slaaet *
+forkertIndput: *Forkert input, prøv igen!*

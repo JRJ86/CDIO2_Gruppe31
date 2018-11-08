@@ -20,6 +20,8 @@ public class Spiller {
 
     public void setPenge(int nyPenge) {this.penge=nyPenge;}
 
+
+
     public int getId(){
         return id;
     }
