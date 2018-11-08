@@ -1,12 +1,11 @@
-package Tekst;
-
 import org.junit.Test;
+import Tekst.Tekst;
 
-import java.io.File;
+import Tekst.TekstController;
 
-import static org.junit.Assert.*;
 
-public class TekstControllerTest {
+public class Test_vaelgSprog {
+
     /**@Author Andreas
      * Tesy type- Integrationstest: Tester UI og TekstController smat tilknyttede tekstfiler
      * Formål: at se om vi kan indhente en tekst fil.
@@ -17,20 +16,14 @@ public class TekstControllerTest {
      * Faktisk resultat:
      */
 
+@Test
+public void Test_vaelgSprog() {
+    TekstController.setSprog(0);
+    System.out.println(Tekst.velkommen());
+    TekstController.setSprog(1);
+    System.out.println(Tekst.velkommen());
+    TekstController.setSprog(2);
+    System.out.println(Tekst.velkommen());
 
-    /*@Test
-    public void getAlleSprog() {
-        File[] sprogfiler = TekstController.
-
-
-
-    }
-*/
-    @Test
-    public void setSprog() {
-    }
-
-    @Test
-    public void getTekst() {
-    }
+}
 }
