@@ -10,18 +10,30 @@ public class Spiller {
      */
     public Spiller () {
 
-
     }
 
-
+    /**
+     *
+     * @param a
+     */
     public void setId(int a) {id=a;}
 
+    /**
+     *
+     * @return
+     */
     public int getPenge() {return penge;}
 
+    /**
+     *
+     * @param nyPenge
+     */
     public void setPenge(int nyPenge) {this.penge=nyPenge;}
 
-
-
+    /**
+     *
+     * @return
+     */
     public int getId(){
         return id;
     }

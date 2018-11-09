@@ -32,8 +32,10 @@ public class Raflebaeger {
         terningSum = terning1.rul()+terning2.rul();
     }
 
-    /**@author Jacob
+    /**
+     * @author Jacob
      * Metode der returnerer den samlede terning værdi ved rul med raflebaeger
+     * @return
      */
     public static int getTerningSum()
     {
