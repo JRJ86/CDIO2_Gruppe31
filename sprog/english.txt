@@ -21,7 +21,7 @@ hulletTitel: *The pit*
 hulletBeskrivelse: *You threw 50 goldcoins into the pit, because you thought it was a wish-granting well... fool.*
 guldMineTitel: *Goldmine*
 guldMineBeskrivelse: *You found gold in the mountains and sell it for 650, you're rich!*
-spilNavn: *Die in adventure*
+spilNavn: *Die in adventure* //forslag: A dicey adventure
 velkommen: *Welcome to*
 spilBeskrivelse: *Hit the dice and see what adventure it brings to you. The first to win 3000 goldsmiths wins the game.*
 setSprog: *Which language should player be on? Enter the number of the language you want*
@@ -38,26 +38,4 @@ spillerMedStort: *Player*
 slaaMedTerning: *Press 1 to hit the dice.*
 printTerning: *You have hit*
 wrongInput: *Wrong input, please try again!*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 spilBeskrivelse: *What language do you wish my lord?*
