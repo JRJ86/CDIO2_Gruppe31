@@ -1,0 +1,38 @@
+título de la torre: * torre *
+taarnet Descripción: * Podrías responder a la marcha del dragón y tener el tesoro de la victoria. ¡Has recibido 250 monedas de oro! *
+Título del cráter: * Cráter *
+Descripción del cráter: * Has perdido 100 monedas de oro en un cráter - bonito. *
+título del palacio: * palacio *
+Descripciones del palacio: * Trajiste a la princesa a casa al palacio y recibiste 100 monedas de oro como recompense.*
+koldOerkenTitel: * Desierto frío *
+koldOerkenBeskrivelse: * Has terminado en el frío, y estás obligado a comprar unos dedos más calientes por 20 monedas de oro. *
+muretByTitel: * Muret City *
+muretByBeskrivelse: * Ayudas a la ciudad a reparar el muro, y matas a algunos orcos, y te otorgan 180 monedas de oro. *
+Título del monasterio: * monasterio *
+Descripciones del monasterio: * Bebiste lleno de monjes: ganaste una comida pero gastaste todo el dinero en mjoed. *
+moerkGrotteTitel: * Gruta Oscura *
+moerkGrotteBeskrivelse: * Olvidaste una bolsa de 70 monedas de oro en una Gruta Oscura - no los volverás a encontrar. *
+cabañas de montañaTitel: * cabañas de montaña *
+descripción de las cabañas de montaña: * Encontró 60 orfebres en una cabaña de montaña; es posible que desee ver una estela si desea mantenerlos. *
+varulveMurenTitel: * Paredes de lobo *
+lobo Descripción de la pared: * Cruzaste la pared de la pared y tuviste que darles 60 molinos de oro porque no te comieron. Disponible, no puedes dormir, así que puedes golpear de nuevo. *
+Título del hoyo: * hoyo *
+Descripción del hoyo: * Tiraste 50 monedas de oro en un hoyo porque pensaste que era un puente de deseos. *
+Título de la mina de oro: * mina de oro *
+Descripción de la mina de oro: * Has encontrado oro en las montañas y lo has fundido en 650 monedas de oro. ¡Eres rico! *
+nombre del juego: * Vencer una aventura *
+bienvenido: * bienvenido a *
+descripción del juego: * Batir los dados y ver qué aventura te trae. El primero en ganar 3000 mondeas de oro gana el juego. *
+setSprog: * ¿En qué idioma debería estar el jugador? Ingrese el número del idioma que desea *
+Iniciar juegos: * Ingrese 1 para comenzar el juego *
+turno1: * es jugador *
+tur2: * tour. *
+countryPaa: * Estás aterrizado en el campo: *
+money1: * tienes ahora *
+money2: * monedas de oro *
+Adiós: * ¡Gracias por el juego - adiós! *
+ha ganado2: * ¡consiguió 3,000 monedas de oro y gana el juego! *
+playerMedSize: * jugador *
+PlayerMedStort: * jugador *
+slaMedTerning: * Presione 1 para golpear el cubo. *
+printTerning: * vence *
