@@ -13,7 +13,8 @@ public class Test_Spilfunktioner {
         Spilfunktioner.lavSpillere(antalSpillere);
 
         for (int i = 0; i < Spilfunktioner.getSpillerListe().length; i++) {
-            System.out.println(Spilfunktioner.getSpillerListe()[i].getId());
+            System.out.println("Spiller: "+Spilfunktioner.getSpillerListe()[i].getId()+", Pengebeholdning: "+Spilfunktioner.getSpillerListe()[i].getPenge());
+
 
         }
     }

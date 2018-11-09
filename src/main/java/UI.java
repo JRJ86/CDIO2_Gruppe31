@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class UI {
     Scanner input = new Scanner(System.in);
 
+    
 
     /**
      * @author Abhishek-Kashyap (Stackoverflow.com)
@@ -27,7 +28,10 @@ public class UI {
         } catch (IOException | InterruptedException ex) {}
     }
 
-
+    /**
+     * @author Andreas
+     * Metoden indstiller, spillets sprogkonfigurationer.
+     */
     public void vaelgSprog(){
 
         rydKonsol();
@@ -155,6 +159,10 @@ public class UI {
         System.out.println(Tekst.feltBeskrivelse(feltNr));
     }
 
+    /**
+     * @author Andreas
+      * @param spillerPenge Printer pengebeholdningen for den spiller der har turen.
+     */
     public void printSpillerPenge(int spillerPenge){
         System.out.println("\n" +
                             Tekst.penge1()+" "+spillerPenge+" "+Tekst.penge2());
