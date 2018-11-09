@@ -5,13 +5,9 @@ package Tekst;
  */
 
 public class Tekst {
-
     public static String sprogNavn(){ return TekstController.getTekst(0);}
-
     public static String feltTitel(int feltNummer){ return TekstController.getTekst((feltNummer*2-3));}
-
     public static String feltBeskrivelse(int feltNummer){ return TekstController.getTekst(feltNummer*2-2);}
-
     public static String spilNavn(){return TekstController.getTekst(23);}
     public static String velkommen(){return TekstController.getTekst(24);}
     public static String spilBeskrivelse(){return TekstController.getTekst(25);}

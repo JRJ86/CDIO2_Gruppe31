@@ -2,10 +2,11 @@ import org.junit.*;
 
 import static org.junit.Assert.assertTrue;
 
-
 public class Test_Spilfunktioner {
 
-
+    /**
+     *
+     */
     @Test
     public void Test_lavSpillere() {
         int antalSpillere = 3;
@@ -14,7 +15,6 @@ public class Test_Spilfunktioner {
 
         for (int i = 0; i < Spilfunktioner.getSpillerListe().length; i++) {
             System.out.println("Spiller: "+Spilfunktioner.getSpillerListe()[i].getId()+", Pengebeholdning: "+Spilfunktioner.getSpillerListe()[i].getPenge());
-
 
         }
     }
@@ -26,7 +26,6 @@ public class Test_Spilfunktioner {
      * for spiller 2 er 0 (ikke -2 idet der er lavet et if statement der lukker af for dette).
      * Testen er godkendt.
      */
-
     @Test
     public void Test_justerSpillerPenge() {
         Spiller[] spillerListe = new Spiller[2];
@@ -63,7 +62,6 @@ public class Test_Spilfunktioner {
      * fra klassen Spilfunktioner.
      * Resultat af test: god
      */
-
     @Test
     public void Test_rafleKast() {
         final int NUMBEROFROOLS = 1000;

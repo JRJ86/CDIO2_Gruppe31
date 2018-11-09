@@ -9,6 +9,10 @@ class Felt{
         this.vaerdi=vaerdi;
     }
 
+    /**
+     *
+     * @return
+     */
     public int getVaerdi() {
         return vaerdi;
     }
