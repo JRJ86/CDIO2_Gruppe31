@@ -20,15 +20,15 @@ public class Test_TekstController {
 
         // Dansk
         TekstController.setSprog(0);
-        assertEquals(Tekst.velkommen(), "Velkommen til");
+        assertEquals( "Velkommen til", Tekst.velkommen());
 
         // Engelsk
         TekstController.setSprog(1);
-        assertEquals(Tekst.velkommen(), "Welcome to");
+        assertEquals("Welcome to",Tekst.velkommen() );
 
         //Fransk
         TekstController.setSprog(2);
-        assertEquals(Tekst.velkommen(), "Bienvenue à");
+        assertEquals("Bienvenue à", Tekst.velkommen() );
 
     }
 
