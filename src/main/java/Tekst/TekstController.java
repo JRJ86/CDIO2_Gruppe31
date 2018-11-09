@@ -1,29 +1,22 @@
 package Tekst;
 
 import java.io.*;
-import java.util.Scanner;
 
 /** @author Malte
  * Indeholder metoder til at håndtere sprog,
- * samt alt tekst oversat til de forskellige sprog.
+ * samt alt sprog oversat til de forskellige sprog.
  */
 public class TekstController {
-
-    /* Stien til folderen \tekst inde i programmet. Den sørger
-        desuden for at hente den i programmets mappe uanset,
-        hvorhenne programmet ligger på computeren. */
-    private static String FOLDERSTI = "tekst"+File.separator;
 
     /*  Indstillingen der styrer hvilket sprog teksterne printes på
         Den henviser til en specifik sprogfil. */
     private static File nuvaerendeSprogFil = null;
 
 
-
     /**
      * @author Malte
      * Henter alle navnene på mulige sprog, med udgangspunkt
-     * i hvilke sprog-filer der ligger \tekst\ mappen.
+     * i hvilke sprog-filer der ligger \sprog\ mappen.
      * Den henter alle de første linjer (navnet på sproget)
      * i alle sprogfiler.
      *
@@ -49,14 +42,14 @@ public class TekstController {
 
     /**
      * @author Malte
-     * Henter alle sprog-filerne i mappen \tekst\ - giver fejl, hvis der ingen filer er.
+     * Henter alle sprog-filerne i mappen \sprog\ - giver fejl, hvis der ingen filer er.
      * @return Sprog filerne som en File array
      */
     private static File[] getSprogFiler(){
-        File f = new File(FOLDERSTI);
+        File f = new File(getSprogFolder());
         File[] allFiles = f.listFiles();
         if( allFiles.length == 0){
-            System.out.println("FEJL: Ingen sprogfiler i '"+FOLDERSTI+"'");
+            System.out.println("FEJL: Ingen sprogfiler i '"+getSprogFolder()+"'");
             return null;
         }else {
             return allFiles; }
@@ -86,8 +79,10 @@ public class TekstController {
      * @return nuvaerendeSprogFil variabel
      */
     private static File getNuvaerendeSprogFil(){
+
         if(nuvaerendeSprogFil == null){
-            nuvaerendeSprogFil = new File(FOLDERSTI+"dansk.txt");
+            nuvaerendeSprogFil = new File(getSprogFolder()+"dansk.txt");
+
         }
         return nuvaerendeSprogFil;
     }
@@ -95,9 +90,9 @@ public class TekstController {
 
     /**
      * @author Malte
-     *  Finder den printbare tekst på en vilkårlig linje - dvs.
-     *  teksten mellem stjernerne, og altså den tekst der vises i UI.
-     * @param linje linje tekst hvori man ønsker at finde den printbare tekst
+     *  Finder den printbare sprog på en vilkårlig linje - dvs.
+     *  teksten mellem stjernerne, og altså den sprog der vises i UI.
+     * @param linje linje sprog hvori man ønsker at finde den printbare sprog
      * @return Teksten der skal printes i spillet
      */
     private static String findPrintbarTekst(String linje){
@@ -106,14 +101,14 @@ public class TekstController {
         int startIndex = 0;
         int slutIndex = 0;
 
-        // Tjekker at linjen overhovedet indeholder printbar tekst.
+        // Tjekker at linjen overhovedet indeholder printbar sprog.
         if(linje.contains("*")){
 
             // Gennemgår hver char (bogstav) i String'en 'linje'
             for(int i=0; i<linje.length()-2; i++ ){
                 /*  Tjekker kun til og med det 3. sidste char,
                     da der er brug for mindst 2 chars efter stjernen
-                    (en tekst/char + en stjerne mere mere)
+                    (en sprog/char + en stjerne mere mere)
                  */
 
                 // Checker om char er første citationstegn
@@ -164,13 +159,22 @@ public class TekstController {
         return null;
     }
 
+    /**
+     * Henter stien (pathname) til folderen, hvor alle sprog-filerne ligger.
+     * Den henter det med udgangspunkt i .jar-filens beliggenhed.
+     * @return Stien til folderen med sprog filer
+     */
+    public static String getSprogFolder(){
+        return System.getProperty("user.dir")+File.separator+"sprog"+File.separator;
+    }
+
 
     /**
      * @author Malte
-     * Henter printbar tekst fra et tekststykke, med udgangspunkt i linjenummeret.
+     * Henter printbar sprog fra et tekststykke, med udgangspunkt i linjenummeret.
      * Den holder styr på, hvilket sprog der hentes fra.
      * @param linjeNummer hvilket linjenummer den skal hente teksten fra
-     * @return Printbar tekst fra en linje på det nuvaerende sprog
+     * @return Printbar sprog fra en linje på det nuvaerende sprog
      */
     static String getTekst(int linjeNummer){
         String tekst = getLinjeFraFil(getNuvaerendeSprogFil(), linjeNummer);

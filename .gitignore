@@ -4,4 +4,5 @@
 .idea/usage.statistics.xml
 .idea/tasks.xml
 .idea/libraries
+*.jar
 out/
